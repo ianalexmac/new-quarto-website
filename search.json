@@ -1,35 +1,5 @@
 [
   {
-    "objectID": "slides/presentation_demo.html#introductions",
-    "href": "slides/presentation_demo.html#introductions",
-    "title": "Demo Presentation",
-    "section": "Introductions",
-    "text": "Introductions\nPut text here",
-    "crumbs": [
-      "Example Presentation"
-    ]
-  },
-  {
-    "objectID": "slides/presentation_demo.html#second-slide",
-    "href": "slides/presentation_demo.html#second-slide",
-    "title": "Demo Presentation",
-    "section": "Second Slide",
-    "text": "Second Slide\nPut text here\n\nThese are the speaker’s notes\n\n\n\n\nDemo Presentation",
-    "crumbs": [
-      "Example Presentation"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site",
-    "crumbs": [
-      "About Us"
-    ]
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "New Quarto Website",
@@ -77,6 +47,36 @@
     "text": "Inline Code\n\nprint(\"Hello World!  This was printed with R\")\n\n[1] \"Hello World!  This was printed with R\"",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\n\nCitationBibTeX citation:@online{dobbins2024,\n  author = {Dobbins, Elizabeth},\n  title = {About},\n  date = {2024-04-17},\n  url = {https://eldobbins/new-quarto-website//about.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDobbins, Elizabeth. 2024. “About.” April 17, 2024. https://eldobbins/new-quarto-website//about.html.",
+    "crumbs": [
+      "About Us"
+    ]
+  },
+  {
+    "objectID": "slides/presentation_demo.html#introductions",
+    "href": "slides/presentation_demo.html#introductions",
+    "title": "Demo Presentation",
+    "section": "Introductions",
+    "text": "Introductions\nPut text here",
+    "crumbs": [
+      "Example Presentation"
+    ]
+  },
+  {
+    "objectID": "slides/presentation_demo.html#second-slide",
+    "href": "slides/presentation_demo.html#second-slide",
+    "title": "Demo Presentation",
+    "section": "Second Slide",
+    "text": "Second Slide\nPut text here\n\nThese are the speaker’s notes\n\n\n\n\nDemo Presentation",
+    "crumbs": [
+      "Example Presentation"
     ]
   }
 ]
