@@ -1,0 +1,13 @@
+---
+title: "About"
+author:
+  - name: Liz Dobbins
+    url: https://github.com/eldobbins
+    affiliation: "University of Alaska Fairbanks"
+    affiliation-url: https://www.uaf.edu/ 
+type: webpage
+citation: true
+date: 2024-06-01
+---
+
+About this site

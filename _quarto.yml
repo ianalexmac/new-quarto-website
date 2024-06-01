@@ -1,0 +1,48 @@
+project:
+  type: book
+
+book:
+  page-navigation: true
+  title: New Quarto Website 
+  author: Liz Dobbins
+  description: New Quarto Website contains all the boilerplate you need to create a website.
+  site-url: "https://eldobbins/new-quarto-website/" 
+  repo-url: https://github.com/eldobbins/new-quarto-website 
+  repo-actions: [issue]
+  
+  page-footer:
+    right: "This page is based on Openscape's [Quarto Site Template](https://github.com/Openscapes/quarto-website-tutorial) and built with [Quarto](https://quarto.org/) ."
+    left: "&copy; CC BY-SA 4.0, 2024"
+    
+  sidebar:
+    logo: "images/data-duck.png"
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://cookiecutter.readthedocs.io/en/stable/
+        text: "Cookiecutter Project Templates"
+      - icon: github
+        href: https://github.com/eldobbins
+        text: "Liz Dobbins's GitHub"
+
+  chapters:
+    - index.qmd
+  appendices:
+    - about.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    css: styles.css
+    toc: true
+
+
+filters:
+  - quarto
+
+
