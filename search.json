@@ -4,79 +4,40 @@
     "href": "index.html",
     "title": "New Quarto Website",
     "section": "",
-    "text": "Here is the place to put your welcome message",
+    "text": "0.1 Welcome\nHere is the place to put your welcome message",
     "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "New Quarto Website",
-    "section": "",
-    "text": "Here is the place to put your welcome message",
-    "crumbs": [
-      "Home"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>New Quarto Website</span>"
     ]
   },
   {
     "objectID": "index.html#section-1",
     "href": "index.html#section-1",
     "title": "New Quarto Website",
-    "section": "Section 1",
-    "text": "Section 1\nPut the Section 1 text here",
+    "section": "0.2 Section 1",
+    "text": "0.2 Section 1\nPut the Section 1 text here",
     "crumbs": [
-      "Home"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>New Quarto Website</span>"
     ]
   },
   {
     "objectID": "index.html#section-2",
     "href": "index.html#section-2",
     "title": "New Quarto Website",
-    "section": "Section 2",
-    "text": "Section 2\nThis is a stoat\n\n\n\n\n\n\n\nThis is a stoat.",
+    "section": "0.3 Section 2",
+    "text": "0.3 Section 2\nThis is a stoat\n\n\n\n\n\n\n\nThis is a stoat.",
     "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#inline-code",
-    "href": "index.html#inline-code",
-    "title": "New Quarto Website",
-    "section": "Inline Code",
-    "text": "Inline Code\n\nprint(\"Hello World!  This was printed with R\")\n\n[1] \"Hello World!  This was printed with R\"",
-    "crumbs": [
-      "Home"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>New Quarto Website</span>"
     ]
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Appendix A — About",
     "section": "",
-    "text": "About this site\n\n\n\nCitationBibTeX citation:@online{dobbins2024,\n  author = {Dobbins, Elizabeth},\n  title = {About},\n  date = {2024-04-17},\n  url = {https://eldobbins/new-quarto-website//about.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDobbins, Elizabeth. 2024. “About.” April 17, 2024. https://eldobbins/new-quarto-website//about.html.",
+    "text": "About this site",
     "crumbs": [
-      "About Us"
-    ]
-  },
-  {
-    "objectID": "slides/presentation_demo.html#introductions",
-    "href": "slides/presentation_demo.html#introductions",
-    "title": "Demo Presentation",
-    "section": "Introductions",
-    "text": "Introductions\nPut text here",
-    "crumbs": [
-      "Example Presentation"
-    ]
-  },
-  {
-    "objectID": "slides/presentation_demo.html#second-slide",
-    "href": "slides/presentation_demo.html#second-slide",
-    "title": "Demo Presentation",
-    "section": "Second Slide",
-    "text": "Second Slide\nPut text here\n\nThese are the speaker’s notes\n\n\n\n\nDemo Presentation",
-    "crumbs": [
-      "Example Presentation"
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>About</span>"
     ]
   }
 ]
