@@ -107,6 +107,7 @@ ul.task-list li input[type="checkbox"] {
     <a href="https://cookiecutter.readthedocs.io/en/stable/" title="Cookiecutter Project Templates" class="quarto-navigation-tool px-1" aria-label="Cookiecutter Project Templates"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/eldobbins" title="Liz Dobbins's GitHub" class="quarto-navigation-tool px-1" aria-label="Liz Dobbins's GitHub"><i class="bi bi-github"></i></a>
     <a href="https://github.com/eldobbins/new-quarto-website" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./New-Quarto-Website.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -442,7 +443,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/eldobbins\/new-quarto-website\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
