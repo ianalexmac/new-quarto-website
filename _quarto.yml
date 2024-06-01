@@ -6,9 +6,10 @@ book:
   title: New Quarto Website 
   author: Liz Dobbins
   description: New Quarto Website contains all the boilerplate you need to create a website.
-  site-url: "https://eldobbins/new-quarto-website/" 
+  # site-url: "https://eldobbins/new-quarto-website/" 
   repo-url: https://github.com/eldobbins/new-quarto-website 
   repo-actions: [issue]
+  downloads: [pdf]
   
   page-footer:
     right: "This page is based on Openscape's [Quarto Site Template](https://github.com/Openscapes/quarto-website-tutorial) and built with [Quarto](https://quarto.org/) ."
@@ -39,6 +40,9 @@ format:
     code-copy: true
     code-overflow: wrap
     css: styles.css
+    toc: true
+  pdf:
+    documentclass: scrreprt # LaTex document class as implemented by KOMA-script (book, report, article, letter)
     toc: true
 
 
