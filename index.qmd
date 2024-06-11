@@ -1,6 +1,6 @@
 ---
 title: "New Quarto Website"
-subtitle: "A Website Made with Quarto"
+subtitle: "A Book Made with Quarto"
 ---
 
 ## Welcome  {#welcome}
@@ -17,4 +17,11 @@ Put the Section 1 text here
 This is a stoat
 
 [![This is a stoat.](https://britishwildlifecentre.co.uk/wp-content/uploads/2018/12/New-Website-Stoat-Pt-07-18.jpg){fig-alt="Stoat" width=200 fig-align="left"}](https://www.adfg.alaska.gov/static/education/wns/weasels.pdf "See Alaskan Weasels")
+
+## Inline Code
+
+
+```{r}
+print("Hello World!  This was printed with R")
+```
 
