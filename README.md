@@ -22,7 +22,7 @@ quarto render
 
 ## Publishing via GitHub
 
-Set things up (or is that the cc business)
+Set things up (or is that the cc business).
 
 
 ## Credits
