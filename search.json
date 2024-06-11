@@ -30,6 +30,16 @@
     ]
   },
   {
+    "objectID": "index.html#inline-code",
+    "href": "index.html#inline-code",
+    "title": "New Quarto Website",
+    "section": "0.4 Inline Code",
+    "text": "0.4 Inline Code\n\nprint(\"Hello World!  This was printed with R\")\n\n[1] \"Hello World!  This was printed with R\"",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>New Quarto Website</span>"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Appendix A — About",
