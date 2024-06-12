@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2 
+        uses: actions/checkout@v4 
         
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -19,16 +19,13 @@ jobs:
           # uncomment below and fill to pin a version
           # version: 0.9.600
       
-      # add software dependencies here
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
       
-      - name: Install packages
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            any::knitr
-            any::rmarkdown
+      - name: Restore R package dependencies with renv
+        run: |
+          install.packages("renv")
+          renv::restore()
       
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
