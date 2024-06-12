@@ -117,9 +117,7 @@ Plot.plot({
 region_residential_weighted_prices <- 
   weighted_prices %>%
   filter(year < 2020 & sector == "residential") %>%
-    rename(
-      `ACEP Region` = acep_energy_region,
-      Sector = sector)
+    rename(`ACEP Region` = acep_energy_region, Sector = sector)
 
 # Filter the last year for each region for the text labels
 last_year_data <- region_residential_weighted_prices %>%
@@ -135,7 +133,8 @@ ggplot(region_residential_weighted_prices,
   ggtitle("Figure 2: Residential Price Over Time") +
   scale_color_manual(values = c("#8CBBDA", "#97CD93", "#F28D8C")) +
   theme_minimal() +
-  theme(legend.position = "none")
+  theme(legend.position = "none", 
+    panel.grid.minor.x = element_blank())
 
 ```
 
@@ -211,6 +210,37 @@ Plot.plot({
 
 ```
 
+<br>
+
+```{r}
+
+coastal_weighted_prices <- 
+  weighted_prices %>%
+  filter(year < 2020 &  
+        acep_energy_region == "Coastal") %>%
+  rename(`ACEP Region` = acep_energy_region, Sector = sector)
+
+# Filter the last year for each region for the text labels
+last_year_data <- coastal_weighted_prices %>%
+  group_by(`Sector`) %>%
+  filter(year == max(year))
+
+ggplot(coastal_weighted_prices, 
+      aes(x = year, y = weighted_price, color = Sector)) +
+  geom_line(linewidth = 2) +
+  geom_text(data = last_year_data, aes(label = Sector), hjust = 1.05, vjust = -1) +
+  scale_x_continuous(name = "Year", breaks = seq(2011, 2019, 1), expand = c(0, 0.1)) + 
+  scale_y_continuous(name = "Cents per Kilowatt Hour", limits = c(10, 40.5), breaks = seq(10, 40.5, 10)) +
+  ggtitle("Figure 3: Sector Price Over Time, Coastal Region") +
+  scale_color_manual(values = c("#e29617", "#fad900", "#0084c1")) +
+  theme_minimal() +
+  theme(legend.position = "none", 
+    panel.grid.minor.x = element_blank())
+
+```
+
+
+
 ## Railbelt
 
 @fig-price-sector-railbelt shows the average price of electricity in the Railbelt region for each customer class and each year of the report. Between 2011 and 2019, Other customers saw a large decrease in price, followed by a gradual increase. Residential and Commercial customers experienced slight decreases in price until 2013 when prices reversed and rose dramatically. 
@@ -283,6 +313,36 @@ Plot.plot({
 
 ```
 
+<br>
+
+```{r}
+
+railbelt_weighted_prices <- 
+  weighted_prices %>%
+  filter(year < 2020 &  
+        acep_energy_region == "Railbelt") %>%
+  rename(`ACEP Region` = acep_energy_region, Sector = sector)
+
+# Filter the last year for each region for the text labels
+last_year_data <- railbelt_weighted_prices %>%
+  group_by(`Sector`) %>%
+  filter(year == max(year))
+
+ggplot(railbelt_weighted_prices, 
+      aes(x = year, y = weighted_price, color = Sector)) +
+  geom_line(linewidth = 2) +
+  geom_text(data = last_year_data, aes(label = Sector), hjust = 1.05, vjust = -1) +
+  scale_x_continuous(name = "Year", breaks = seq(2011, 2019, 1), expand = c(0, 0.1)) + 
+  scale_y_continuous(name = "Cents per Kilowatt Hour", limits = c(10, 40.5), breaks = seq(10, 40.5, 10)) +
+  ggtitle("Figure 3: Sector Price Over Time, Railbelt Region") +
+  scale_color_manual(values = c("#e29617", "#fad900", "#0084c1")) +
+  theme_minimal() +
+  theme(legend.position = "none", 
+    panel.grid.minor.x = element_blank())
+
+```
+
+
 ## Rural Remote
 @fig-price-sector-rural shows the average price of electricity in the Rural Remote region for each customer class and year of the report. Between 2011 and 2019, Residential customers experienced a gradual increase in rates, while Commercial and Other customers experienced a gradual decrease in rates. 
 
@@ -351,6 +411,34 @@ Plot.plot({
 
 ```
 
+<br>
+
+```{r}
+
+rural_weighted_prices <- 
+  weighted_prices %>%
+  filter(year < 2020 &  
+        acep_energy_region == "Rural Remote") %>%
+  rename(`ACEP Region` = acep_energy_region, Sector = sector)
+
+# Filter the last year for each region for the text labels
+last_year_data <- rural_weighted_prices %>%
+  group_by(`Sector`) %>%
+  filter(year == max(year))
+
+ggplot(rural_weighted_prices, 
+      aes(x = year, y = weighted_price, color = Sector)) +
+  geom_line(linewidth = 2) +
+  geom_text(data = last_year_data, aes(label = Sector), hjust = 1.05, vjust = -1) +
+  scale_x_continuous(name = "Year", breaks = seq(2011, 2019, 1), expand = c(0, 0.1)) + 
+  scale_y_continuous(name = "Cents per Kilowatt Hour", limits = c(10, 70), breaks = seq(10, 70, 10)) +
+  ggtitle("Figure 3: Sector Price Over Time, Rural Remote Region") +
+  scale_color_manual(values = c("#e29617", "#fad900", "#0084c1")) +
+  theme_minimal() +
+  theme(legend.position = "none", 
+    panel.grid.minor.x = element_blank())
+
+```
 
 
 ```{ojs}
