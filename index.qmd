@@ -1,6 +1,7 @@
 ---
 title: "New Quarto Website"
 subtitle: "A Book Made with Quarto"
+echo: false
 ---
 
 ## Welcome  {#welcome}
@@ -22,6 +23,17 @@ This is a stoat
 
 
 ```{r}
-print("Hello World!  This was printed with R")
+#| output: false
+library(renv)
+renv::restore()
+renv::status()
+
+library(readr)
+library(dplyr)
 ```
 
+
+```{r}
+read_csv("./data/working/prices/weighted_prices.csv")
+
+```
