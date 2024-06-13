@@ -24,7 +24,7 @@ jobs:
       
       - name: Restore R package dependencies with renv
         run: |
-          Rscript -e "install.packages("renv")"
+          Rscript -e "install.packages('renv')"
           Rscript -e "renv::restore()"
       
       - name: Publish to GitHub Pages (and render)
