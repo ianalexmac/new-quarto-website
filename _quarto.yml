@@ -6,8 +6,8 @@ book:
   title: New Quarto Website 
   author: Liz Dobbins
   description: New Quarto Website contains all the boilerplate you need to create a website and PDF report.
-  # site-url: "https://eldobbins/new-quarto-website/" 
-  repo-url: https://github.com/eldobbins/new-quarto-website 
+  # site-url: "https://ianalexmac.github.io/new-quarto-website/" 
+  repo-url: https://github.com/ianalexmac/new-quarto-website
   repo-actions: [issue]
   downloads: [pdf]
  
@@ -24,13 +24,13 @@ book:
         href: https://cookiecutter.readthedocs.io/en/stable/
         text: "Cookiecutter Project Templates"
       - icon: github
-        href: https://github.com/eldobbins
-        text: "Liz Dobbins's GitHub"
+        href: https://github.com/
+        text: "github"
 
   chapters:
-    - index.qmd
+    - prices.qmd
   appendices:
-    - about.qmd
+    - setup.qmd
 
 format:
   html:
