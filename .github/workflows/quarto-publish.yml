@@ -24,7 +24,15 @@ jobs:
 
       - name: Install system dependencies
         run: sudo apt-get install -y libcurl4-openssl-dev
-      
+
+      - name: Cache Renv packages
+        uses: actions/cache@v2
+        with:
+          path: ~/R/Library
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+
       - name: Restore R package dependencies with renv
         run: |
           Rscript -e "install.packages('renv')"
@@ -34,5 +42,3 @@ jobs:
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
