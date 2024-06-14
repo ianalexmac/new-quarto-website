@@ -15,4 +15,4 @@ output:
     theme: null
 ---
 
-About this site
+About this site.
