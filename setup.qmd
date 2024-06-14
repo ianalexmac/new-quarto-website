@@ -1,6 +1,6 @@
 ---
-title: "New Quarto Website"
-subtitle: "A Book Made with Quarto"
+title: "Setup"
+subtitle: "Getting started with Quarto and conditional rendering"
 echo: false
 output:
   html_document:

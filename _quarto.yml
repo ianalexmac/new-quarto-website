@@ -3,9 +3,9 @@ project:
 
 book:
   page-navigation: true
-  title: New Quarto Website 
-  author: Liz Dobbins
-  description: New Quarto Website contains all the boilerplate you need to create a website and PDF report.
+  title: Data Ducks Quarto 
+  author: ACEP Data Team
+  description: Demonstration of Quarto's ability to render both HTML and PDF.
   # site-url: "https://ianalexmac.github.io/new-quarto-website/" 
   repo-url: https://github.com/ianalexmac/new-quarto-website
   repo-actions: [issue]
@@ -23,11 +23,9 @@ book:
       - icon: globe
         href: https://cookiecutter.readthedocs.io/en/stable/
         text: "Cookiecutter Project Templates"
-      - icon: github
-        href: https://github.com/
-        text: "github"
 
   chapters:
+    - index.qmd
     - prices.qmd
   appendices:
     - setup.qmd
