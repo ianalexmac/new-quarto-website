@@ -8,6 +8,11 @@ author:
 type: webpage
 citation: true
 date: 2024-06-11
+output:
+  html_document:
+    self_contained: false
+  latex_document:
+    theme: null
 ---
 
 About this site
