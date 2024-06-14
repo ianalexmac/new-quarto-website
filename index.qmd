@@ -2,6 +2,17 @@
 title: "New Quarto Website"
 subtitle: "A Book Made with Quarto"
 echo: false
+output:
+  html_document:
+    self_contained: false
+  latex_document:
+    theme: null
+format:
+  latex:
+    documentclass: report
+    classoption: [twocolumn, landscape]
+    lof: true
+    lot: true
 ---
 
 ## Welcome  {#welcome}
@@ -19,21 +30,127 @@ This is a stoat
 
 [![This is a stoat.](https://britishwildlifecentre.co.uk/wp-content/uploads/2018/12/New-Website-Stoat-Pt-07-18.jpg){fig-alt="Stoat" width=200 fig-align="left"}](https://www.adfg.alaska.gov/static/education/wns/weasels.pdf "See Alaskan Weasels")
 
-## Inline Code
+<br>
 
+## `renv` Package Management
+Packages in this repo are managed by [`renv`](https://rstudio.github.io/renv/articles/renv.html). The workflow takes a second to get used to, but doesn't have to be a big deal. Similar to `npm`, `renv` is globally installed on your system independent of the repo environment. 
+
+Once the repository has been cloned to your computer and `renv` is installed on your system, install the necessary R dependencies:  
+1. In a terminal window, navigate to the root directory of the repo  
+2. Start R by typing `R` and pressing Enter  
+3. In the resulting R console, run the following command  
+```  
+renv::restore() #installs packages in the `renv.lock` file  
+```  
+
+As you write code that needs additional packages, include them at the top of your scripts as `library("new-package")`. Then, before committing, run steps 1 through 3 above, but use `renv::snapshot()` in step 3. This will comb through the repo to look for packages not in the renv.lock file. When you are prompted for a selection, select option 2: `"Install the packages, then snapshot"` to bring the new packages into the fold. 
+
+*Note: To get you started, the renv.lock file of this repo includes all `tidyverse` packages*
+
+<br>
+
+## Rendering a PDF
+To render a PDF of this code, open a terminal, navigate to the root of the repo and run the following command. Make sure to change the output directory.
+```{bash}
+#| eval: false
+#| echo: true
+quarto render --to pdf --output-dir /path/to/output/dir 
+```
+*Please note that rendering to PDF requires a LaTeX distribution to be installed on your system. If you don't have one, you can install TinyTeX, a lightweight, portable, and easy-to-maintain LaTeX distribution. You can install it in R with `tinytex::install_tinytex()`.*
+
+<br>
+
+## Conditional Rendering to HTML and PDF
+Quarto bills itself as a "scientific and technical publishing system" and the system delivers. Code can be rendered into many formats, such as articles, presentations, dashboards, websites, blogs, and books.  
+The data team at ACEP has explored rendering to HTML and to PDF formats in order to build interactive websites and print publications. 
+
+Despite Quarto's powers, QMD files that generate Javascript and HTML won't render to PDF. In some cases, the render will throw an error. In order to maintain a code base that builds both an interactive website and a PDF document, we utilize seperate code blocks and conditional rendering. Effectively, code blocks are turned on or off depending on the target output. This is done in the chunk header.  
+<br>
+If you'd like the chunk to run when building a website, use:
+<br>
+`{r, eval=knitr::is_html_output()}`
+<br>
+If you'd like the chunk to run when building a PDF, use:
+<br>
+ `{r, eval=knitr::is_latex_output()}`
+
+## A tale of two chunks
+Below is code to render two graphs using R. One code block is straight `ggplot`, the other contains an interactive tooltip from the [`ggiraph`](http://davidgohel.github.io/ggiraph/) package. Since the interative tooltip builds out as HTML and Javascript, it will break if Quarto is rendering a PDF.  
+And so we have two chunks, one with interactivity that's destined for the web, and the other is static for the PDF report. By including them side-by-side, the flow of the document is preserved. By conditionally evaluating using the header code from above, we can build a website and static report from the same code base.  
+You will only see one graph no matter what the render format because the other is conditionally executed for the other format. Look below the graph to see either "HTML code block active" or "PDF code block active" depending on the format you are viewing.  
+
+<br>
 
 ```{r}
 #| output: false
-library(renv)
-renv::restore()
-renv::status()
-
 library(readr)
 library(dplyr)
+library(ggplot2)
+library(ggiraph)
+
+weighted_prices <- read_csv("./data/weighted_prices.csv")
 ```
 
 
-```{r}
-read_csv("./data/working/prices/weighted_prices.csv")
+```{r, eval=knitr::is_html_output()}
+
+region_residential_weighted_prices <- 
+  weighted_prices %>%
+  filter(year < 2020 & sector == "residential") %>%
+    rename(`ACEP Region` = acep_energy_region, Sector = sector)
+
+# Filter the last year for each region for the text labels
+last_year_data <- region_residential_weighted_prices %>%
+  group_by(`ACEP Region`) %>%
+  filter(year == max(year))
+
+p <- 
+  ggplot(region_residential_weighted_prices, 
+    aes(x = year, y = weighted_price, color = `ACEP Region`, group = `ACEP Region`)) +
+
+  geom_line_interactive(linewidth = 2) +
+  
+  geom_point_interactive(aes(tooltip = paste("Year:", year, "<br>Price:", round(weighted_price, 0), "cents/kWh")), size = 10, color = "transparent") +
+
+  geom_text_interactive(data = last_year_data, aes(label = `ACEP Region`, tooltip = `ACEP Region`), hjust = 1.1, vjust = 2.5) +
+
+  scale_x_continuous(name = "Year", breaks = seq(2011, 2019, 1), expand = c(0, 0.1)) + 
+  scale_y_continuous(name = "Cents per Kilowatt Hour", limits = c(16, 28), breaks = seq(16, 28, 2)) +
+
+  ggtitle("Figure 2: Residential Price Over Time") +
+  scale_color_manual(values = c("#8CBBDA", "#97CD93", "#F28D8C")) +
+  theme_minimal() +
+  theme(legend.position = "none", panel.grid.minor.x = element_blank())
+
+girafe(code = print(p))
+
+print("HTML code block active")
+
+```
+
+```{r, eval=knitr::is_latex_output()}
+region_residential_weighted_prices <- 
+  weighted_prices %>%
+  filter(year < 2020 & sector == "residential") %>%
+    rename(`ACEP Region` = acep_energy_region, Sector = sector)
+
+# Filter the last year for each region for the text labels
+last_year_data <- region_residential_weighted_prices %>%
+  group_by(`ACEP Region`) %>%
+  filter(year == max(year))
+
+ggplot(region_residential_weighted_prices, 
+      aes(x = year, y = weighted_price, color = `ACEP Region`)) +
+  geom_line(linewidth = 2) +
+  geom_text(data = last_year_data, aes(label = `ACEP Region`), hjust = 1.1, vjust = 2.5) +
+  scale_x_continuous(name = "Year", breaks = seq(2011, 2019, 1), expand = c(0, 0.1)) + 
+  scale_y_continuous(name = "Cents per Kilowatt Hour", limits = c(16, 28), breaks = seq(16, 28, 2)) +
+  ggtitle("Figure 2: Residential Price Over Time") +
+  scale_color_manual(values = c("#8CBBDA", "#97CD93", "#F28D8C")) +
+  theme_minimal() +
+  theme(legend.position = "none", 
+    panel.grid.minor.x = element_blank())
+
+print("PDF code block active")
 
 ```
