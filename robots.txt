@@ -1,1 +1,0 @@
-Sitemap: https://ianalexmac.github.io/new-quarto-website/sitemap.xml

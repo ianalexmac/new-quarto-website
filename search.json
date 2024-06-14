@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "2024 Alaska Electricity Trends Report",
+    "title": "New Quarto Website",
     "section": "",
     "text": "0.1 Welcome\nHere is the place to put your welcome message",
     "crumbs": [
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#section-1",
     "href": "index.html#section-1",
-    "title": "2024 Alaska Electricity Trends Report",
+    "title": "New Quarto Website",
     "section": "0.2 Section 1",
     "text": "0.2 Section 1\nPut the Section 1 text here",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#section-2",
     "href": "index.html#section-2",
-    "title": "2024 Alaska Electricity Trends Report",
+    "title": "New Quarto Website",
     "section": "0.3 Section 2",
     "text": "0.3 Section 2\nThis is a stoat\n\n\n\n\n\n\n\nThis is a stoat.",
     "crumbs": [
@@ -30,63 +30,54 @@
     ]
   },
   {
-    "objectID": "index.html#inline-code",
-    "href": "index.html#inline-code",
-    "title": "2024 Alaska Electricity Trends Report",
-    "section": "0.4 Inline Code",
-    "text": "0.4 Inline Code\n\n\nRows: 99 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): acep_energy_region, sector\ndbl (3): year, avg_price, weighted_price\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n# A tibble: 99 × 5\n    year acep_energy_region sector     avg_price weighted_price\n   &lt;dbl&gt; &lt;chr&gt;              &lt;chr&gt;          &lt;dbl&gt;          &lt;dbl&gt;\n 1  2011 Coastal            commercial      51.2           20.9\n 2  2012 Coastal            commercial      51.0           20.5\n 3  2013 Coastal            commercial      50.6           20.7\n 4  2014 Coastal            commercial      49.5           21.4\n 5  2015 Coastal            commercial      45.9           19.4\n 6  2016 Coastal            commercial      43.5           19.4\n 7  2017 Coastal            commercial      41.6           19.9\n 8  2018 Coastal            commercial      44.7           19.9\n 9  2019 Coastal            commercial      42.1           19.7\n10  2020 Coastal            commercial      45.2           15.8\n# ℹ 89 more rows",
+    "objectID": "index.html#renv-package-management",
+    "href": "index.html#renv-package-management",
+    "title": "New Quarto Website",
+    "section": "0.4 renv Package Management",
+    "text": "0.4 renv Package Management\nPackages in this repo are managed by renv. The workflow takes a second to get used to, but doesn’t have to be a big deal. Similar to npm, renv is globally installed on your system independent of the repo environment.\nOnce the repository has been cloned to your computer and renv is installed on your system, install the necessary R dependencies:\n1. In a terminal window, navigate to the root directory of the repo\n2. Start R by typing R and pressing Enter\n3. In the resulting R console, run the following command\nrenv::restore() #installs packages in the `renv.lock` file  \nAs you write code that needs additional packages, include them at the top of your scripts as library(\"new-package\"). Then, before committing, run steps 1 through 3 above, but use renv::snapshot() in step 3. This will comb through the repo to look for packages not in the renv.lock file. When you are prompted for a selection, select option 2: \"Install the packages, then snapshot\" to bring the new packages into the fold.\nNote: To get you started, the renv.lock file of this repo includes all tidyverse packages",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>New Quarto Website</span>"
     ]
   },
   {
-    "objectID": "prices.html",
-    "href": "prices.html",
-    "title": "2  Price of Electricity",
+    "objectID": "index.html#rendering-a-pdf",
+    "href": "index.html#rendering-a-pdf",
+    "title": "New Quarto Website",
+    "section": "0.5 Rendering a PDF",
+    "text": "0.5 Rendering a PDF\nTo render a PDF of this code, open a terminal, navigate to the root of the repo and run the following command. Make sure to change the output directory.\n\nquarto render --to pdf --output-dir /path/to/output/dir \n\nPlease note that rendering to PDF requires a LaTeX distribution to be installed on your system. If you don’t have one, you can install TinyTeX, a lightweight, portable, and easy-to-maintain LaTeX distribution. You can install it in R with tinytex::install_tinytex().",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>New Quarto Website</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#conditional-rendering-to-html-and-pdf",
+    "href": "index.html#conditional-rendering-to-html-and-pdf",
+    "title": "New Quarto Website",
+    "section": "0.6 Conditional Rendering to HTML and PDF",
+    "text": "0.6 Conditional Rendering to HTML and PDF\nQuarto bills itself as a “scientific and technical publishing system” and the system delivers. Code can be rendered into many formats, such as articles, presentations, dashboards, websites, blogs, and books.\nThe data team at ACEP has explored rendering to HTML and to PDF formats in order to build interactive websites and print publications.\nDespite Quarto’s powers, QMD files that generate Javascript and HTML won’t render to PDF. In some cases, the render will throw an error. In order to maintain a code base that builds both an interactive website and a PDF document, we utilize seperate code blocks and conditional rendering. Effectively, code blocks are turned on or off depending on the target output. This is done in the chunk header.\n If you’d like the chunk to run when building a website, use:  {r, eval=knitr::is_html_output()}  If you’d like the chunk to run when building a PDF, use:  {r, eval=knitr::is_latex_output()}",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>New Quarto Website</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#a-tale-of-two-chunks",
+    "href": "index.html#a-tale-of-two-chunks",
+    "title": "New Quarto Website",
+    "section": "0.7 A tale of two chunks",
+    "text": "0.7 A tale of two chunks\nBelow is code to render two graphs using R. One code block is straight ggplot, the other contains an interactive tooltip from the ggiraph package. Since the interative tooltip builds out as HTML and Javascript, it will break if Quarto is rendering a PDF.\nAnd so we have two chunks, one with interactivity that’s destined for the web, and the other is static for the PDF report. By including them side-by-side, the flow of the document is preserved. By conditionally evaluating using the header code from above, we can build a website and static report from the same code base.\nYou will only see one graph no matter what the render format because the other is conditionally executed for the other format. Look below the graph to see either “HTML code block active” or “PDF code block active” depending on the format you are viewing.\n\n\n\n\n\n\n\n[1] \"HTML code block active\"",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>New Quarto Website</span>"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Appendix A — About",
     "section": "",
-    "text": "2.1 General Overview\nUtilities in Alaska serve multiple customers, namely residential, commercial, industrial, government/municipal, and community customer classes. Each customer class experiences a different set of costs such as per kWh charge as well as monthly customer charges. In this section, we aim to highlight trends in electricity prices for the residential, commercial, and other customer classes across the Coastal, Railbelt, and Rural Remote regions. We again restrict the data years in this section to 2011 to 2019 due to concerns with data validity for 2020-21.\nIn rural areas, many communities are eligible to participate in the PCE program (described in ?sec-pce-description). It is important to note that the prices presented here reflect the post-PCE adjustment and are annualized averages based on the calendar year. Yearly average effective rates listed here reflect the calendar year and not the fiscal year, which will make them different from those reported in the AEA’s annual reports. We also note that for PCE communities, the rates are reported in the original data. For data sourced from the EIA, rates were calculated by dividing total revenue by total kWh sold in each customer class - this may overestimate the rate as this would include revenue from customer charges.\nNote that all prices in this section have been adjusted for inflation over time to 2021 dollars using the Bureau of Labor Statistics (BLS) Consumer Price Index (CPI) for all items in urban Alaska (BLS CUUSA427SA0). To our knowledge, there is no CPI that properly accounts for price changes over time in rural Alaska. However, the general trend shows that customer account-weighted prices have been relatively stagnant across all regions of the state.",
+    "text": "About this site",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
-    ]
-  },
-  {
-    "objectID": "prices.html#sec-prices",
-    "href": "prices.html#sec-prices",
-    "title": "2  Price of Electricity",
-    "section": "",
-    "text": "Regional Overview\n?fig-price-regions-classes shows the distribution of prices across a selected customer class. The three classes used in this analysis can be selected from the dropdown menu. Hover your pointer over the dot to display utility information.\nMost notably, the dramatic effects of the PCE subsidy can be seen by comparing the price distribution of the residential customer class against the price distribution of the commercial/other customer classes in the Rural Remote and Coastal regions.\n\n\n\nRegional Averages\nDue to the wide range of electricity prices in Alaska, it is difficult to accurately summarize the data. Because of this, we determined that averages were best calculated using a customer account weighted average. Population is roughly correlated to price, with small communities experiencing higher rates than larger communities. The average number of customer accounts for the year was used to calculate the weighted arithmetic mean price for each year and region. ?fig-price-over-time is a graph of residential customer prices over time after weighting for the number of customer accounts.\n\n\n\n\n\n\n\n[1] \"HTML code block active\"",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
-    ]
-  },
-  {
-    "objectID": "prices.html#coastal",
-    "href": "prices.html#coastal",
-    "title": "2  Price of Electricity",
-    "section": "2.2 Coastal",
-    "text": "2.2 Coastal\n?fig-price-sector-coastal shows the average price of electricity in the Coastal region for each customer class and year. Between 2011 and 2019, the region experienced decreasing prices for Commercial and Other customers, while Residential customers have seen a slight increase in price.\nDELETED\nResidential customers in the Coastal region saw increases in the price of electricity while commercial and other customers saw decreases. However, the residential customer class continues to pay the lowest per kWh in the region due to a combination of low prices in high population areas and PCE subsidies in eligible communities.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
-    ]
-  },
-  {
-    "objectID": "prices.html#railbelt",
-    "href": "prices.html#railbelt",
-    "title": "2  Price of Electricity",
-    "section": "2.3 Railbelt",
-    "text": "2.3 Railbelt\n?fig-price-sector-railbelt shows the average price of electricity in the Railbelt region for each customer class and each year of the report. Between 2011 and 2019, Other customers saw a large decrease in price, followed by a gradual increase. Residential and Commercial customers experienced slight decreases in price until 2013 when prices reversed and rose dramatically.\nDELETED\nThis region differs significantly from the Coastal and Rural Remote regions in that residential customers pay more for electricity than the Commercial or Other customer classes.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
-    ]
-  },
-  {
-    "objectID": "prices.html#rural-remote",
-    "href": "prices.html#rural-remote",
-    "title": "2  Price of Electricity",
-    "section": "2.4 Rural Remote",
-    "text": "2.4 Rural Remote\n?fig-price-sector-rural shows the average price of electricity in the Rural Remote region for each customer class and year of the report. Between 2011 and 2019, Residential customers experienced a gradual increase in rates, while Commercial and Other customers experienced a gradual decrease in rates.\nDELETED",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>About</span>"
     ]
   }
 ]
