@@ -1,107 +1,230 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Alaska Electricity Trends Report",
+    "section": "",
+    "text": "Welcome\nThis interactive report summarizes electricity data gathered from federal, state, and utility sources and presented in the form of a web book. It provides an overview of electricity capacity, generation, consumption, and price trends from 2011 to 2021. A comprehensive report highlighting these trends has not been produced for the state of Alaska since 2013’s Alaska Energy Statistics Report.\nThis web book is designed as ‘best available’ document for the 2011-2021 energy trends data and reports. This website will be updated when updates to the underlying 2011-2021 data or fixes become available. Future year trends reports will be tackled in a different context and reporting structure.\nPlease explore the data using the chapter navigation links in the left sidebar and the section navigation links in the right sidebar.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Alaska Electricity Trends Report",
+    "section": "",
+    "text": "0.0.1 How to Cite\ninclude _citations.qmd",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#executive-summary",
+    "href": "index.html#executive-summary",
+    "title": "Alaska Electricity Trends Report",
+    "section": "Executive Summary",
+    "text": "Executive Summary\nThe objective of this work is to provide regulators, legislators, and other energy stakeholders with a holistic look at recent trends in electrical generation. The first impetus for this report is a lack of combined reporting on electricity generation across the state that extends to federally and non-federally regulated electric utilities (most of Alaska’s electric utilities do not meet the minimum threshold for federal reporting requirements). The second impetus for this report is to aid in decision-making processes surrounding Alaska’s energy future.\nWith uncertainty in natural gas sources on the Railbelt, technological advancements in generation technology, and improvements in the affordability of technologies, understanding trends in the state’s capacity, generation, consumption, and prices is vital to more informed decision-making.\nIn this report, we present data collected from federal, state, and local sources supplemented by correspondence with utilities. We show trends for capacity, generation, consumption, and prices. The capacity and generation trends include data from 2011 to 2021, and the consumption and prices trends are data limited to 2019. More information on sources and methods are provided in the subsequent sections throughout the report. This report uses data visualizations as the primary mode for presenting the trends. To accommodate this presentation style, we present trends as simplified regions of the state as opposed to the Alaska Energy Authority energy regions.\nWe emphasize that this report is designed to provide factual information to the best of our ability without providing recommendations or in-depth analysis. However, context is provided for more impactful trends.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#key-takeaways",
+    "href": "index.html#key-takeaways",
+    "title": "Alaska Electricity Trends Report",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n0.0.2 Capacity\n\nGeneration capacity on average increased across all of Alaska from 2011 to 2021.\nThe state saw large increases in renewable energy capacity, storage, and on-demand peaking units.\n\n\n\n0.0.3 Generation\n\nNet generation has remained relatively stable\nThe Coastal region generated more power from wind and hydro, but less from oil in 2021 than in 2011.\nThe Railbelt region generated more power from wind, hydro, coal, and solar, but less from oil and gas in 2021 than in 2011.\nThe Rural Remote region generated more power from wind and solar, but less from oil and hydro in 2021 than in 2011.\nWe have seen significant increases in the usage of utility-scale battery storage.\n\n\n\n0.0.4 Consumption\n\nElectricity consumption overall has fallen for all customer classes, with residential customers seeing the most reductions.\nThe number of customer accounts have continued to increase throughout the state.\nPer capita consumption for the residential sector is highest in the Coastal region and lowest in the Rural Remote region.\n\n\n\n0.0.5 Prices\n\nResidential electricity rates increased on average across Alaska after adjusting for inflation, the PCE subsidy, and population weighting.\nThe region that experienced the least residential rate increase was the Coastal region with a 6% increase.\nThe region experiencing the highest residential rate increase was the Railbelt with a 26% increase.\nCommercial and Other customers in the Coastal and Rural Remote regions saw rate decreases where Commercial customers in the Railbelt region saw price increases of about 15%.\nPCE subsidies continue to dampen residential prices in the Coastal and Rural Remote regions.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "credits.html",
+    "href": "credits.html",
+    "title": "2  Acknowledgements and Roles",
+    "section": "",
+    "text": "2.1 Acknowledgements",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Acknowledgements and Roles</span>"
+    ]
+  },
+  {
+    "objectID": "credits.html#acknowledgements",
+    "href": "credits.html#acknowledgements",
+    "title": "2  Acknowledgements and Roles",
+    "section": "",
+    "text": "2.1.1 Funding\nFunding support for this team was provided by leveraging support from multiple partners that include:\n\nOffice of Naval Research’s (ONR) Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) program (award #N00014-19-1-2235)\nDenali Commission - Alaska Energy Project Partnerships (award #1659)\nState of Alaska\n\nNote: Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funding supporters.\n\n\n2.1.2 Partners\n\nAlaska Center for Energy and Power (ACEP) at the University of Alaska Fairbanks (UAF)\nInstitute of Social and Economic Research (ISER) at the University of Alaska Anchorage (UAA)\nAlaska Energy Authority (AEA)\nDOWL Engineering (DOWL)\n\nData used in the energy workbooks comes from a variety of sources and partners, but special thanks to the Alaska Energy Authority for partnering with the team to make the base line power cost equalization datasets available. Without this openness, this report would not be possible. We would also like to thank the utilities who responded directly when we had questions. A full list of these organizations has been complied in ?sec-sources.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Acknowledgements and Roles</span>"
+    ]
+  },
+  {
+    "objectID": "credits.html#sec-contacts",
+    "href": "credits.html#sec-contacts",
+    "title": "2  Acknowledgements and Roles",
+    "section": "2.2 Credits and Roles",
+    "text": "2.2 Credits and Roles\nThe Alaska Electrical Trends web book has been produced by the Alaska Center for Energy and Power (ACEP) at the University of Alaska Fairbanks (UAF). It is a collaboration between data scientists, researchers, and policy experts. Roles here are described by Contributor Roles Taxonomy (CRediT).\n\nJesse Kaczmarski1\n\nRoles: data curation, formal analysis, project administration, software, validation, visualization, writing – original draft\n\nIan MacDougall1\n\nRoles: data curation, formal analysis, software, validation, visualization, writing – original draft\n\nSteve Colt2\n\nRoles: data curation, formal analysis, investigation, validation, writing – review & editing\n\nElizabeth (Liz) Dobbins1\n\nRoles: software, project administration, resources, supervision, writing – review & editing\n\nNeil McMahon3\n\nRoles: data curation, investigation, validation\n\nSara Fisher-Goad4\n\nRoles: conceptualization, validation, writing – review & editing\n\nBrittany Smart2\n\nRoles: project administration, writing – review & editing\n\nDayne Broderson1\n\nRoles: conceptualization, funding acquisition\n\nGwen Holdmann2\n\nRoles: conceptualization, funding acquisition\n\nShivani Mathur2\n\nRoles: validation, writing – review & editing\n\nErika Boice2\n\nRoles: writing – review & editing\n\n\n\n2.2.1 Affiliations\n\n  \n    Data and Cyberinfrastructure Management, ACEP, UAF.\n    Energy Transition Initiative, ACEP, UAF\n    Project Manager, DOWL\n    Office of the Vice Chancellor for Research, UAF\n  \n\nACEP’s Data and Cyberinfrastructure Management (DCM) Team  includes software developers, mathematicians, spatial analysts, economists, open science enthusiasts, and experts in information security and the deployment of computer infrastructure. ACEP’s Energy Transition Initiative (ETI)  is a group of experts that respond quickly to informational requests about Alaska energy. These teams together maintain a reliable pathway for data from collection to distribution.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Acknowledgements and Roles</span>"
+    ]
+  },
+  {
+    "objectID": "acronyms.html",
+    "href": "acronyms.html",
+    "title": "3  Acronym Definitions",
+    "section": "",
+    "text": "3.1 Acronyms\nThese abbreviations are used throughout this report",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Acronym Definitions</span>"
+    ]
+  },
+  {
+    "objectID": "acronyms.html#acronyms",
+    "href": "acronyms.html#acronyms",
+    "title": "3  Acronym Definitions",
+    "section": "",
+    "text": "ACEP: Alaska Center for Energy and Power, UAF\nAEA: Alaska Energy Authority\nBUECI: Barrow Utilities & Electric Cooperative, Inc.\nDCM: the Data and Cyberinfrastructure Management team at ACEP, UAF\nPCE: Power Cost Equalization\nEIA: Energy Information Administration\nETI: Energy Transitions Initiative, ACEP\nFERC: Federal Energy Regulatory Commission\nCAGR: Compound Annual Growth Rate\nkW: Kilowatt\nkWh: Kilowatt-hour\nMW: Megawatt\nMWh: Megawatt-hour\nGW: Gigawatts\nGWh: Gigawatt-hour\nUAF: University of Alaska Fairbanks",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Acronym Definitions</span>"
+    ]
+  },
+  {
     "objectID": "prices.html",
     "href": "prices.html",
-    "title": "2  Price of Electricity",
+    "title": "4  Price of Electricity",
     "section": "",
-    "text": "2.1 General Overview\nUtilities in Alaska serve multiple customers, namely residential, commercial, industrial, government/municipal, and community customer classes. Each customer class experiences a different set of costs such as per kWh charge as well as monthly customer charges. In this section, we aim to highlight trends in electricity prices for the residential, commercial, and other customer classes across the Coastal, Railbelt, and Rural Remote regions. We again restrict the data years in this section to 2011 to 2019 due to concerns with data validity for 2020-21.\nIn rural areas, many communities are eligible to participate in the PCE program (described in ?sec-pce-description). It is important to note that the prices presented here reflect the post-PCE adjustment and are annualized averages based on the calendar year. Yearly average effective rates listed here reflect the calendar year and not the fiscal year, which will make them different from those reported in the AEA’s annual reports. We also note that for PCE communities, the rates are reported in the original data. For data sourced from the EIA, rates were calculated by dividing total revenue by total kWh sold in each customer class - this may overestimate the rate as this would include revenue from customer charges.\nNote that all prices in this section have been adjusted for inflation over time to 2021 dollars using the Bureau of Labor Statistics (BLS) Consumer Price Index (CPI) for all items in urban Alaska (BLS CUUSA427SA0). To our knowledge, there is no CPI that properly accounts for price changes over time in rural Alaska. However, the general trend shows that customer account-weighted prices have been relatively stagnant across all regions of the state.",
+    "text": "4.1 General Overview\nUtilities in Alaska serve multiple customers, namely residential, commercial, industrial, government/municipal, and community customer classes. Each customer class experiences a different set of costs such as per kWh charge as well as monthly customer charges. In this section, we aim to highlight trends in electricity prices for the residential, commercial, and other customer classes across the Coastal, Railbelt, and Rural Remote regions. We again restrict the data years in this section to 2011 to 2019 due to concerns with data validity for 2020-21.\nIn rural areas, many communities are eligible to participate in the PCE program (described in ?sec-pce-description). It is important to note that the prices presented here reflect the post-PCE adjustment and are annualized averages based on the calendar year. Yearly average effective rates listed here reflect the calendar year and not the fiscal year, which will make them different from those reported in the AEA’s annual reports. We also note that for PCE communities, the rates are reported in the original data. For data sourced from the EIA, rates were calculated by dividing total revenue by total kWh sold in each customer class - this may overestimate the rate as this would include revenue from customer charges.\nNote that all prices in this section have been adjusted for inflation over time to 2021 dollars using the Bureau of Labor Statistics (BLS) Consumer Price Index (CPI) for all items in urban Alaska (BLS CUUSA427SA0). To our knowledge, there is no CPI that properly accounts for price changes over time in rural Alaska. However, the general trend shows that customer account-weighted prices have been relatively stagnant across all regions of the state.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
     ]
   },
   {
     "objectID": "prices.html#sec-prices",
     "href": "prices.html#sec-prices",
-    "title": "2  Price of Electricity",
+    "title": "4  Price of Electricity",
     "section": "",
-    "text": "2.1.1 Regional Overview\n?fig-price-regions-classes shows the distribution of prices across a selected customer class. The three classes used in this analysis can be selected from the dropdown menu. Hover your pointer over the dot to display utility information.\nMost notably, the dramatic effects of the PCE subsidy can be seen by comparing the price distribution of the residential customer class against the price distribution of the commercial/other customer classes in the Rural Remote and Coastal regions.\n\n\n\n2.1.2 Regional Averages\nDue to the wide range of electricity prices in Alaska, it is difficult to accurately summarize the data. Because of this, we determined that averages were best calculated using a customer account weighted average. Population is roughly correlated to price, with small communities experiencing higher rates than larger communities. The average number of customer accounts for the year was used to calculate the weighted arithmetic mean price for each year and region. ?fig-price-over-time is a graph of residential customer prices over time after weighting for the number of customer accounts.\n\n\n\n\n\n\n\n[1] \"HTML code block active\"",
+    "text": "4.1.1 Regional Overview\n?fig-price-regions-classes shows the distribution of prices across a selected customer class. The three classes used in this analysis can be selected from the dropdown menu. Hover your pointer over the dot to display utility information.\nMost notably, the dramatic effects of the PCE subsidy can be seen by comparing the price distribution of the residential customer class against the price distribution of the commercial/other customer classes in the Rural Remote and Coastal regions.\n\n\n\n4.1.2 Regional Averages\nDue to the wide range of electricity prices in Alaska, it is difficult to accurately summarize the data. Because of this, we determined that averages were best calculated using a customer account weighted average. Population is roughly correlated to price, with small communities experiencing higher rates than larger communities. The average number of customer accounts for the year was used to calculate the weighted arithmetic mean price for each year and region. ?fig-price-over-time is a graph of residential customer prices over time after weighting for the number of customer accounts.\n\n\n\n\n\n\n\n[1] \"HTML code block active\"",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
     ]
   },
   {
     "objectID": "prices.html#coastal",
     "href": "prices.html#coastal",
-    "title": "2  Price of Electricity",
-    "section": "2.2 Coastal",
-    "text": "2.2 Coastal\n?fig-price-sector-coastal shows the average price of electricity in the Coastal region for each customer class and year. Between 2011 and 2019, the region experienced decreasing prices for Commercial and Other customers, while Residential customers have seen a slight increase in price.\nThe average real price (in 2021 dollars) of electricity for Residential customers in the Coastal region rose {ojs} coastal_res_change% from {ojs} coastal_res_2011 cents/kWh in 2011 to {ojs} coastal_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Coastal region fell {ojs} coastal_com_change% from {ojs} coastal_com_2011 cents/kWh in 2011 to {ojs} coastal_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Coastal region fell {ojs} coastal_other_change% from {ojs} coastal_other_2011 cents/kWh in 2011 to {ojs} coastal_other_2019 cents/kWh in 2019.\nResidential customers in the Coastal region saw increases in the price of electricity while commercial and other customers saw decreases. However, the residential customer class continues to pay the lowest per kWh in the region due to a combination of low prices in high population areas and PCE subsidies in eligible communities.",
+    "title": "4  Price of Electricity",
+    "section": "4.2 Coastal",
+    "text": "4.2 Coastal\n?fig-price-sector-coastal shows the average price of electricity in the Coastal region for each customer class and year. Between 2011 and 2019, the region experienced decreasing prices for Commercial and Other customers, while Residential customers have seen a slight increase in price.\nThe average real price (in 2021 dollars) of electricity for Residential customers in the Coastal region rose {ojs} coastal_res_change% from {ojs} coastal_res_2011 cents/kWh in 2011 to {ojs} coastal_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Coastal region fell {ojs} coastal_com_change% from {ojs} coastal_com_2011 cents/kWh in 2011 to {ojs} coastal_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Coastal region fell {ojs} coastal_other_change% from {ojs} coastal_other_2011 cents/kWh in 2011 to {ojs} coastal_other_2019 cents/kWh in 2019.\nResidential customers in the Coastal region saw increases in the price of electricity while commercial and other customers saw decreases. However, the residential customer class continues to pay the lowest per kWh in the region due to a combination of low prices in high population areas and PCE subsidies in eligible communities.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
     ]
   },
   {
     "objectID": "prices.html#railbelt",
     "href": "prices.html#railbelt",
-    "title": "2  Price of Electricity",
-    "section": "2.3 Railbelt",
-    "text": "2.3 Railbelt\n?fig-price-sector-railbelt shows the average price of electricity in the Railbelt region for each customer class and each year of the report. Between 2011 and 2019, Other customers saw a large decrease in price, followed by a gradual increase. Residential and Commercial customers experienced slight decreases in price until 2013 when prices reversed and rose dramatically.\nThe average real price of electricity for Residential customers in the Railbelt rose {ojs} railbelt_res_change% from {ojs} railbelt_res_2011 cents/kWh in 2011 to {ojs} railbelt_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Railbelt rose {ojs} railbelt_com_change% from {ojs} railbelt_com_2011 cents/kWh in 2011 to {ojs} railbelt_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Railbelt fell {ojs} railbelt_other_change% from {ojs} railbelt_other_2011 cents/kWh in 2011 to {ojs} railbelt_other_2019 cents/kWh in 2019.\nThis region differs significantly from the Coastal and Rural Remote regions in that residential customers pay more for electricity than the Commercial or Other customer classes.",
+    "title": "4  Price of Electricity",
+    "section": "4.3 Railbelt",
+    "text": "4.3 Railbelt\n?fig-price-sector-railbelt shows the average price of electricity in the Railbelt region for each customer class and each year of the report. Between 2011 and 2019, Other customers saw a large decrease in price, followed by a gradual increase. Residential and Commercial customers experienced slight decreases in price until 2013 when prices reversed and rose dramatically.\nThe average real price of electricity for Residential customers in the Railbelt rose {ojs} railbelt_res_change% from {ojs} railbelt_res_2011 cents/kWh in 2011 to {ojs} railbelt_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Railbelt rose {ojs} railbelt_com_change% from {ojs} railbelt_com_2011 cents/kWh in 2011 to {ojs} railbelt_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Railbelt fell {ojs} railbelt_other_change% from {ojs} railbelt_other_2011 cents/kWh in 2011 to {ojs} railbelt_other_2019 cents/kWh in 2019.\nThis region differs significantly from the Coastal and Rural Remote regions in that residential customers pay more for electricity than the Commercial or Other customer classes.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
     ]
   },
   {
     "objectID": "prices.html#rural-remote",
     "href": "prices.html#rural-remote",
-    "title": "2  Price of Electricity",
-    "section": "2.4 Rural Remote",
-    "text": "2.4 Rural Remote\n?fig-price-sector-rural shows the average price of electricity in the Rural Remote region for each customer class and year of the report. Between 2011 and 2019, Residential customers experienced a gradual increase in rates, while Commercial and Other customers experienced a gradual decrease in rates.\nThe average price of electricity for the Residential customers in the Rural Remote region rose {ojs} rural_res_change% from {ojs} rural_res_2011 cents/kWh in 2011 to {ojs} rural_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Rural Remote region fell {ojs} rural_com_change% from {ojs} rural_com_2011 cents/kWh in 2011 to {ojs} rural_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Rural Remote region fell {ojs} rural_other_change% from {ojs} rural_other_2011 cents/kWh in 2011 to {ojs} rural_other_2019 cents/kWh in 2019.",
+    "title": "4  Price of Electricity",
+    "section": "4.4 Rural Remote",
+    "text": "4.4 Rural Remote\n?fig-price-sector-rural shows the average price of electricity in the Rural Remote region for each customer class and year of the report. Between 2011 and 2019, Residential customers experienced a gradual increase in rates, while Commercial and Other customers experienced a gradual decrease in rates.\nThe average price of electricity for the Residential customers in the Rural Remote region rose {ojs} rural_res_change% from {ojs} rural_res_2011 cents/kWh in 2011 to {ojs} rural_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Rural Remote region fell {ojs} rural_com_change% from {ojs} rural_com_2011 cents/kWh in 2011 to {ojs} rural_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Rural Remote region fell {ojs} rural_other_change% from {ojs} rural_other_2011 cents/kWh in 2011 to {ojs} rural_other_2019 cents/kWh in 2019.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Appendix A — About this Report",
+    "section": "",
+    "text": "A.1 General Overview\nThis Alaska Electrical Trends Report (AETR) Web Book has been produced by the Alaska Center for Energy and Power (ACEP) at the University of Alaska Fairbanks (UAF). It is designed to be interactive and dynamically updated when new data becomes available.\nThroughout the years, several agencies have prepared and published reports and data compilations on energy use in Alaska. AETR is complementary to those prior reports, but is not presented in a comparable format.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>About this Report</span>"
+    ]
+  },
+  {
+    "objectID": "about.html#sec-historic-timeline",
+    "href": "about.html#sec-historic-timeline",
+    "title": "Appendix A — About this Report",
+    "section": "A.2 Historical Timeline of Prior Reports",
+    "text": "A.2 Historical Timeline of Prior Reports\n\n\n\nFigure A.1: Timeline of Energy Reports\n\n\n\n\n\n\nStarting in 1969, the first Electric Power Trends report was published by the Alaska Power Administration. During this time, the Alaska Power Administration was a federal agency housed within the U.S. Department of the Interior. Their first publication was known as the “First Annual Report” and covered data from the 1968 fiscal year. However, this became the “Alaska Electric Power Statistics Report” in 1971 and examined data from the 1960-1969 data years. The APA continued to produce intermittent reports until 1983 when the State of Alaska established the Alaska Power Authority (APA), which later became the Alaska Energy Authority (AEA).\nUnder state direction, the APA/AEA continued to publish intermittent reports on electric power statistics until their final publication in 1992 which covered data years 1960 to 1991. To address the reporting gap, the Alaska Systems Coordinating Council in collaboration with the State of Alaska, Department of Community and Regional Affairs, Division of Energy continued generating reports until 1996 with their final report covering data years 1960 to 1995. Finally, the University of Alaska Anchorage, Institute of Social and Economic Research produced several reports with their last covering 1960 to 2012. Since then, there have been no electric power statistical reports.\nThe Table A.1 provides a summary of this timeline. This report serves to supplement the reporting gap in electric power statistics for the State of Alaska.\n\n\n\nTable A.1: Historical Timeline of Reports\n\n\n\n\n\n\n\n\n\n\nYear Published\nInstitution\nData Coverage\n\n\n\n\n1971 to 1983\nAlaska Power Administration\n1960 to 1982\n\n\n1984 to 1988\nAlaska Power Authority\n1960 to 1987\n\n\n1989 to 1992\nAlaska Energy Authority\n1960 to 1991\n\n\n1992 to 1996\nAlaska Systems Coordinating Council; State of Alaska\n1960 to 1995\n\n\n2003, 2011 to 2015\nUniversity of Alaska Anchorage, Institute of Social and Economic Research\n1960 to 2012\n\n\n\n\n\n\nFor a table of links to these historic reports, please refer to ?tbl-historic-reports.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>About this Report</span>"
+    ]
+  },
+  {
+    "objectID": "about.html#technical-details",
+    "href": "about.html#technical-details",
+    "title": "Appendix A — About this Report",
+    "section": "A.3 Technical Details",
+    "text": "A.3 Technical Details\nThe book is formatted using Quarto, an open-source scientific and technical publishing system. The template was developed by the Openscapes project, as part of their Quarto Website Tutorial.\nThe markdown files that make up the book reside in the aetr-web-book GitHub repository. The generation process is publicly accessible. Errors in the document can be flagged using GitHub issues where they can be tracked and addressed by the DCM team.\nThe book also integrates R code for data processing and figure generation. When data files are updated, manually triggering the Quarto render will update the figures automatically.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>About this Report</span>"
     ]
   },
   {
     "objectID": "setup.html",
     "href": "setup.html",
-    "title": "Appendix A — Setup",
+    "title": "Appendix B — Setup",
     "section": "",
-    "text": "A.1 Welcome\nWelcome to the technical setup page.",
+    "text": "B.1 Welcome\nWelcome to the technical setup page.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Setup</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Setup</span>"
     ]
   },
   {
     "objectID": "setup.html#renv-package-management",
     "href": "setup.html#renv-package-management",
-    "title": "Appendix A — Setup",
-    "section": "A.2 renv Package Management",
-    "text": "A.2 renv Package Management\nPackages in this repo are managed by renv. The workflow takes a second to get used to, but doesn’t have to be a big deal. Similar to npm, renv is globally installed on your system independent of the repo environment.\nOnce the repository has been cloned to your computer and renv is installed on your system, install the necessary R dependencies:\n1. In a terminal window, navigate to the root directory of the repo\n2. Start R by typing R and pressing Enter\n3. In the resulting R console, run the following command\nrenv::restore() #installs packages in the `renv.lock` file  \nAs you write code that needs additional packages, include them at the top of your scripts as library(\"new-package\"). Then, before committing, run steps 1 through 3 above, but use renv::snapshot() in step 3. This will comb through the repo to look for packages not in the renv.lock file. When you are prompted for a selection, select option 2: \"Install the packages, then snapshot\" to bring the new packages into the fold.\nNote: To get you started, the renv.lock file of this repo includes all tidyverse packages",
+    "title": "Appendix B — Setup",
+    "section": "B.2 renv Package Management",
+    "text": "B.2 renv Package Management\nPackages in this repo are managed by renv. The workflow takes a second to get used to, but doesn’t have to be a big deal. Similar to npm, renv is globally installed on your system independent of the repo environment.\nOnce the repository has been cloned to your computer and renv is installed on your system, install the necessary R dependencies:\n1. In a terminal window, navigate to the root directory of the repo\n2. Start R by typing R and pressing Enter\n3. In the resulting R console, run the following command\nrenv::restore() #installs packages in the `renv.lock` file  \nAs you write code that needs additional packages, include them at the top of your scripts as library(\"new-package\"). Then, before committing, run steps 1 through 3 above, but use renv::snapshot() in step 3. This will comb through the repo to look for packages not in the renv.lock file. When you are prompted for a selection, select option 2: \"Install the packages, then snapshot\" to bring the new packages into the fold.\nNote: To get you started, the renv.lock file of this repo includes all tidyverse packages",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Setup</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Setup</span>"
     ]
   },
   {
     "objectID": "setup.html#rendering-a-pdf",
     "href": "setup.html#rendering-a-pdf",
-    "title": "Appendix A — Setup",
-    "section": "A.3 Rendering a PDF",
-    "text": "A.3 Rendering a PDF\nTo render a PDF of this code, open a terminal, navigate to the root of the repo and run the following command. Make sure to change the output directory.\n\nquarto render --to pdf --output-dir /path/to/output/dir \n\nPlease note that rendering to PDF requires a LaTeX distribution to be installed on your system. If you don’t have one, you can install TinyTeX, a lightweight, portable, and easy-to-maintain LaTeX distribution. You can install it in R with tinytex::install_tinytex().",
+    "title": "Appendix B — Setup",
+    "section": "B.3 Rendering a PDF",
+    "text": "B.3 Rendering a PDF\nTo render a PDF of this code, open a terminal, navigate to the root of the repo and run the following command. Make sure to change the output directory.\n\nquarto render --to pdf --output-dir /path/to/output/dir \n\nPlease note that rendering to PDF requires a LaTeX distribution to be installed on your system. If you don’t have one, you can install TinyTeX, a lightweight, portable, and easy-to-maintain LaTeX distribution. You can install it in R with tinytex::install_tinytex().",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Setup</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Setup</span>"
     ]
   },
   {
     "objectID": "setup.html#conditional-rendering-to-html-and-pdf",
     "href": "setup.html#conditional-rendering-to-html-and-pdf",
-    "title": "Appendix A — Setup",
-    "section": "A.4 Conditional Rendering to HTML and PDF",
-    "text": "A.4 Conditional Rendering to HTML and PDF\nQuarto bills itself as a “scientific and technical publishing system” and the system delivers. Code can be rendered into many formats, such as articles, presentations, dashboards, websites, blogs, and books.\nThe data team at ACEP has explored rendering to HTML and to PDF formats in order to build interactive websites and print publications.\nDespite Quarto’s powers, QMD files that generate Javascript and HTML won’t render to PDF. In some cases, the render will throw an error. In order to maintain a code base that builds both an interactive website and a PDF document, we utilize seperate code blocks and conditional rendering. Effectively, code blocks are turned on or off depending on the target output. This is done in the chunk header.\n If you’d like the chunk to run when building a website, use:  {r, eval=knitr::is_html_output()}  If you’d like the chunk to run when building a PDF, use:  {r, eval=knitr::is_latex_output()}",
+    "title": "Appendix B — Setup",
+    "section": "B.4 Conditional Rendering to HTML and PDF",
+    "text": "B.4 Conditional Rendering to HTML and PDF\nQuarto bills itself as a “scientific and technical publishing system” and the system delivers. Code can be rendered into many formats, such as articles, presentations, dashboards, websites, blogs, and books.\nThe data team at ACEP has explored rendering to HTML and to PDF formats in order to build interactive websites and print publications.\nDespite Quarto’s powers, QMD files that generate Javascript and HTML won’t render to PDF. In some cases, the render will throw an error. In order to maintain a code base that builds both an interactive website and a PDF document, we utilize seperate code blocks and conditional rendering. Effectively, code blocks are turned on or off depending on the target output. This is done in the chunk header.\n If you’d like the chunk to run when building a website, use:  {r, eval=knitr::is_html_output()}  If you’d like the chunk to run when building a PDF, use:  {r, eval=knitr::is_latex_output()}",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Setup</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Setup</span>"
     ]
   },
   {
     "objectID": "setup.html#a-tale-of-two-chunks",
     "href": "setup.html#a-tale-of-two-chunks",
-    "title": "Appendix A — Setup",
-    "section": "A.5 A tale of two chunks",
-    "text": "A.5 A tale of two chunks\nBelow is code to render two graphs using R. One code block is straight ggplot, the other contains an interactive tooltip from the ggiraph package. Since the interative tooltip builds out as HTML and Javascript, it will break if Quarto is rendering a PDF.\nAnd so we have two chunks, one with interactivity that’s destined for the web, and the other is static for the PDF report. By including them side-by-side, the flow of the document is preserved. By conditionally evaluating using the header code from above, we can build a website and static report from the same code base.\nYou will only see one graph no matter what the render format because the other is conditionally executed for the other format. Look below the graph to see either “HTML code block active” or “PDF code block active” depending on the format you are viewing.\n\n\n\n\n\n\n\n[1] \"HTML code block active\"",
+    "title": "Appendix B — Setup",
+    "section": "B.5 A tale of two chunks",
+    "text": "B.5 A tale of two chunks\nBelow is code to render two graphs using R. One code block is straight ggplot, the other contains an interactive tooltip from the ggiraph package. Since the interative tooltip builds out as HTML and Javascript, it will break if Quarto is rendering a PDF.\nAnd so we have two chunks, one with interactivity that’s destined for the web, and the other is static for the PDF report. By including them side-by-side, the flow of the document is preserved. By conditionally evaluating using the header code from above, we can build a website and static report from the same code base.\nYou will only see one graph no matter what the render format because the other is conditionally executed for the other format. Look below the graph to see either “HTML code block active” or “PDF code block active” depending on the format you are viewing.\n\n\n\n\n\n\n\n[1] \"HTML code block active\"",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Setup</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Setup</span>"
     ]
   }
 ]

@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="ACEP Data Team">
+<meta name="author" content="Alaska Center for Energy and Power">
 <meta name="description" content="Demonstration of Quarto’s ability to render both HTML and PDF.">
 
-<title>Data Ducks Quarto</title>
+<title>Alaska Electricity Trends Report</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./prices.html" rel="next">
+<link href="./credits.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -102,11 +102,11 @@ ul.task-list li input[type="checkbox"] {
       <img src="./images/data-duck.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Data Ducks Quarto</a> 
+      <a href="./">Alaska Electricity Trends Report</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://cookiecutter.readthedocs.io/en/stable/" title="Cookiecutter Project Templates" class="quarto-navigation-tool px-1" aria-label="Cookiecutter Project Templates"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/ianalexmac/new-quarto-website" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="./Data-Ducks-Quarto.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <a href="./Alaska-Electricity-Trends-Report.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -121,13 +121,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Acknowledgements and Roles</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./acronyms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Acronym Definitions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./prices.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Price of Electricity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Price of Electricity</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -141,8 +153,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">About this Report</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Setup</span></span></a>
   </div>
 </li>
       </ul>
@@ -153,15 +171,32 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
+  <ul class="collapse">
+  <li><a href="#how-to-cite" id="toc-how-to-cite" class="nav-link" data-scroll-target="#how-to-cite"><span class="header-section-number">0.0.1</span> How to Cite</a></li>
+  </ul></li>
+  <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link" data-scroll-target="#executive-summary">Executive Summary</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a>
+  <ul class="collapse">
+  <li><a href="#capacity" id="toc-capacity" class="nav-link" data-scroll-target="#capacity"><span class="header-section-number">0.0.2</span> Capacity</a></li>
+  <li><a href="#generation" id="toc-generation" class="nav-link" data-scroll-target="#generation"><span class="header-section-number">0.0.3</span> Generation</a></li>
+  <li><a href="#consumption" id="toc-consumption" class="nav-link" data-scroll-target="#consumption"><span class="header-section-number">0.0.4</span> Consumption</a></li>
+  <li><a href="#prices" id="toc-prices" class="nav-link" data-scroll-target="#prices"><span class="header-section-number">0.0.5</span> Prices</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ianalexmac/new-quarto-website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Ducks Quarto</h1>
-<p class="subtitle lead">Welcome</p>
+<h1 class="title">Alaska Electricity Trends Report</h1>
+<p class="subtitle lead">An Analysis of Electricity in Alaska, Data Years 2011-2021</p>
 </div>
 
 <div>
@@ -176,17 +211,11 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>ACEP Data Team </p>
+             <p>Alaska Center for Energy and Power </p>
           </div>
   </div>
     
   
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">Apr 8, 2024 at 19:48 UTC</p>
-    </div>
-  </div>
     
   </div>
   
@@ -195,8 +224,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="welcome" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="welcome">Welcome</h2>
+<p>This interactive report summarizes electricity data gathered from federal, state, and utility sources and presented in the form of a web book. It provides an overview of electricity capacity, generation, consumption, and price trends from 2011 to 2021. A comprehensive report highlighting these trends has not been produced for the state of Alaska since 2013’s <em>Alaska Energy Statistics Report</em>.</p>
+<p>This web book is designed as ‘best available’ document for the 2011-2021 energy trends data and reports. This website will be updated when updates to the underlying 2011-2021 data or fixes become available. Future year trends reports will be tackled in a different context and reporting structure.</p>
+<p>Please explore the data using the chapter navigation links in the left sidebar and the section navigation links in the right sidebar.</p>
+<section id="how-to-cite" class="level3" data-number="0.0.1">
+<h3 data-number="0.0.1" class="anchored" data-anchor-id="how-to-cite"><span class="header-section-number">0.0.1</span> How to Cite</h3>
+<p>include _citations.qmd</p>
+</section>
+</section>
+<section id="executive-summary" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="executive-summary">Executive Summary</h2>
+<p>The objective of this work is to provide regulators, legislators, and other energy stakeholders with a holistic look at recent trends in electrical generation. The first impetus for this report is a lack of combined reporting on electricity generation across the state that extends to federally and non-federally regulated electric utilities (most of Alaska’s electric utilities do not meet the minimum threshold for federal reporting requirements). The second impetus for this report is to aid in decision-making processes surrounding Alaska’s energy future.</p>
+<p>With uncertainty in natural gas sources on the Railbelt, technological advancements in generation technology, and improvements in the affordability of technologies, understanding trends in the state’s capacity, generation, consumption, and prices is vital to more informed decision-making.</p>
+<p>In this report, we present data collected from federal, state, and local sources supplemented by correspondence with utilities. We show trends for capacity, generation, consumption, and prices. The capacity and generation trends include data from 2011 to 2021, and the consumption and prices trends are data limited to 2019. More information on sources and methods are provided in the subsequent sections throughout the report. This report uses data visualizations as the primary mode for presenting the trends. To accommodate this presentation style, we present trends as simplified regions of the state as opposed to the Alaska Energy Authority energy regions.</p>
+<p>We emphasize that this report is designed to provide factual information to the best of our ability without providing recommendations or in-depth analysis. However, context is provided for more impactful trends.</p>
+</section>
+<section id="key-takeaways" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<section id="capacity" class="level3" data-number="0.0.2">
+<h3 data-number="0.0.2" class="anchored" data-anchor-id="capacity"><span class="header-section-number">0.0.2</span> Capacity</h3>
+<ul>
+<li>Generation capacity on average increased across all of Alaska from 2011 to 2021.</li>
+<li>The state saw large increases in renewable energy capacity, storage, and on-demand peaking units.</li>
+</ul>
+</section>
+<section id="generation" class="level3" data-number="0.0.3">
+<h3 data-number="0.0.3" class="anchored" data-anchor-id="generation"><span class="header-section-number">0.0.3</span> Generation</h3>
+<ul>
+<li>Net generation has remained relatively stable</li>
+<li>The Coastal region generated more power from wind and hydro, but less from oil in 2021 than in 2011.</li>
+<li>The Railbelt region generated more power from wind, hydro, coal, and solar, but less from oil and gas in 2021 than in 2011.</li>
+<li>The Rural Remote region generated more power from wind and solar, but less from oil and hydro in 2021 than in 2011.</li>
+<li>We have seen significant increases in the usage of utility-scale battery storage.</li>
+</ul>
+</section>
+<section id="consumption" class="level3" data-number="0.0.4">
+<h3 data-number="0.0.4" class="anchored" data-anchor-id="consumption"><span class="header-section-number">0.0.4</span> Consumption</h3>
+<ul>
+<li>Electricity consumption overall has fallen for all customer classes, with residential customers seeing the most reductions.</li>
+<li>The number of customer accounts have continued to increase throughout the state.</li>
+<li>Per capita consumption for the residential sector is highest in the Coastal region and lowest in the Rural Remote region.</li>
+</ul>
+</section>
+<section id="prices" class="level3" data-number="0.0.5">
+<h3 data-number="0.0.5" class="anchored" data-anchor-id="prices"><span class="header-section-number">0.0.5</span> Prices</h3>
+<ul>
+<li>Residential electricity rates increased on average across Alaska after adjusting for inflation, the PCE subsidy, and population weighting.</li>
+<li>The region that experienced the least residential rate increase was the Coastal region with a 6% increase.</li>
+<li>The region experiencing the highest residential rate increase was the Railbelt with a 26% increase.</li>
+<li>Commercial and Other customers in the Coastal and Rural Remote regions saw rate decreases where Commercial customers in the Railbelt region saw price increases of about 15%.</li>
+<li>PCE subsidies continue to dampen residential prices in the Coastal and Rural Remote regions.</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -756,8 +840,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./prices.html" class="pagination-link" aria-label="Price of Electricity">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Price of Electricity</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./credits.html" class="pagination-link" aria-label="Acknowledgements and Roles">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Acknowledgements and Roles</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -769,9 +853,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/ianalexmac/new-quarto-website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ianalexmac/new-quarto-website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
-<p>This page is based on Openscape’s <a href="https://github.com/Openscapes/quarto-website-tutorial">Quarto Site Template</a> and built with <a href="https://quarto.org/">Quarto</a> .</p>
+<p>This page is based on Openscape’s <a href="https://github.com/Openscapes/quarto-website-tutorial">Quarto Site Template</a> and built with <a href="https://quarto.org/">Quarto</a></p>
 </div>
   </div>
 </footer>
