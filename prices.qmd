@@ -6,14 +6,8 @@ date-format: "MMM D, YYYY [at] HH:mm z"
 output:
   html_document:
     self_contained: false
-  latex_document:
-    theme: null
-format:
-  latex:
-    documentclass: report
-    classoption: [twocolumn, landscape]
-    lof: true
-    lot: true
+  pdf_document:
+    template: report.tex
 echo: false
 ---
 ```{r}

@@ -40,10 +40,9 @@ format:
     css: styles.css
     toc: true
   pdf:
-    documentclass: scrreprt # LaTex document class as implemented by KOMA-script (book, report, article, letter)
-    toc: true
-    lof: false
-    lot: false
+    documentclass: scrreprt
+    template-partials:
+      - before-body.tex
 
 filters:
   - quarto

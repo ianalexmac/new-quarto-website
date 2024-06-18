@@ -1,18 +1,12 @@
 ---
 title: "Setup"
 subtitle: "Getting started with Quarto and conditional rendering"
-echo: false
 output:
   html_document:
     self_contained: false
-  latex_document:
-    theme: null
-format:
-  latex:
-    documentclass: report
-    classoption: [twocolumn, landscape]
-    lof: true
-    lot: true
+  pdf_document:
+    template: report.tex
+echo: false
 ---
 
 ## Welcome  {#welcome}
