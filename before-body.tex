@@ -1,0 +1,28 @@
+$if(has-frontmatter)$
+\frontmatter
+$endif$
+$if(title)$
+\cleardoublepage
+\thispagestyle{empty}
+{\centering
+\par\noindent\includegraphics[width=\textwidth]{images/ACEP_logo.png}
+\par\noindent\includegraphics[width=\textwidth]{images/jnu_aurora.jpeg}
+{\huge\bfseries $title$ \par}
+$if(subtitle)$
+{\Large $subtitle$ \par}
+$endif$
+\vspace{3ex}
+$for(by-author)$
+{\Large $by-author.name.literal$ \par}
+\vspace{3ex}
+{\bfseries\large $date$ \par}
+\vspace{12ex}
+$for(by-author.affiliations)$%
+$if(it.department)$%
+{\bfseries\large $it.department$ \par}
+\vspace{3ex}
+$endif$%
+{\bfseries\large $it.name$ \par}
+$endfor$$endfor$%
+}
+$endif$
