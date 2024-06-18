@@ -1,3 +1,4 @@
+\KOMAoptions{DIV=12}    % adjust margins, KOMA style 
 $if(has-frontmatter)$
 \frontmatter
 $endif$
@@ -5,8 +6,7 @@ $if(title)$
 \cleardoublepage
 \thispagestyle{empty}
 {\centering
-\par\noindent\includegraphics[width=0.75\textwidth]{images/ACEP_logo.png}
-\vspace{3ex}
+\par\noindent\includegraphics[width=\textwidth]{images/banner_acep_uaf.png}
 \par\noindent\includegraphics[width=\textwidth]{images/jnu_aurora.jpeg}
 \vspace{3ex}
 {\huge\bfseries $title$ \par}
