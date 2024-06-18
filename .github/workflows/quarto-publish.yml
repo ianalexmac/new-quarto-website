@@ -44,4 +44,4 @@ jobs:
           target: gh-pages
 
       - name: Render PDF
-        run: quarto render index.qmd --to pdf --output-dir _report
+        run: quarto render index.qmd --to pdf --output-dir .
