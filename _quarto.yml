@@ -3,7 +3,8 @@ project:
 
 book:
   page-navigation: true
-  title: Data Ducks Quarto 
+  title: Alaska Electricity Trends Report 
+  subtitle: Something profound and illuminating.
   author: ACEP Data Team
   description: Demonstration of Quarto's ability to render both HTML and PDF.
   # site-url: "https://ianalexmac.github.io/new-quarto-website/" 
@@ -12,7 +13,7 @@ book:
   downloads: [pdf]
  
   page-footer:
-    right: "This page is based on Openscape's [Quarto Site Template](https://github.com/Openscapes/quarto-website-tutorial) and built with [Quarto](https://quarto.org/) ."
+    right: "This page is based on Openscape's [Quarto Site Template](https://github.com/Openscapes/quarto-website-tutorial) and built with [Quarto](https://quarto.org/)"
     left: "&copy; CC BY-SA 4.0, 2024"
     
   sidebar:
@@ -26,8 +27,11 @@ book:
 
   chapters:
     - index.qmd
+    - credits.qmd
+    - acronyms.qmd
     - prices.qmd
   appendices:
+    - about.qmd
     - setup.qmd
 
 format:
