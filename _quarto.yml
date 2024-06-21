@@ -22,7 +22,7 @@ book:
     left: "&copy; CC BY-SA 4.0, 2024"
     
   sidebar:
-    logo: "images/data-duck.png"
+    logo: "images/ACEP_gear.png"
     pinned: true
     align: center
     tools: 
@@ -63,7 +63,7 @@ format:
       - inner=3cm
       - outer=3cm
       - top=3cm
-      - bottom=3cm
+      - bottom=2.5cm
       - headsep=22pt
       - headheight=11pt
       - footskip=33pt

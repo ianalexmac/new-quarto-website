@@ -1,5 +1,6 @@
 \usepackage{graphicx}
 \usepackage{scrlayer-scrpage}
+\usepackage{xcolor}
 
 \addtokomafont{disposition}{\rmfamily}
 \KOMAoptions{chapterprefix=true,appendixprefix=true}
@@ -9,14 +10,17 @@
 \setkomafont{pagenumber}{\normalfont\normalcolor\footnotesize}
 
 \lefoot[]{}
-\cefoot[\pagemark]{}
+\cefoot[\vspace{3ex} \pagemark \\ \footnotesize \textcolor{gray}{This report is available at no cost from the Alaska Center for Energy and Power (ACEP) at the University of Alaska, Fairbanks (UAF) at www.uaf.edu/acep/our-resources/index.php}]{}
 \refoot[]{}
 \lofoot[]{}
-\cofoot[\pagemark]{}
+\cofoot[\vspace{3ex} \pagemark \\ \footnotesize \textcolor{gray}{This report is available at no cost from the Alaska Center for Energy and Power (ACEP) at the University of Alaska, Fairbanks (UAF) at www.uaf.edu/acep/our-resources/index.php}]{}
 \rofoot[]{}
 \lehead[]{}
-\cehead[]{\includegraphics[height=1cm]{images/header_acep_uaf.jpg}} % Not working, debug
+\cehead[]{} 
 \rehead[]{\leftmark}
 \lohead[]{\rightmark}
 \cohead[]{}
 \rohead[]{}
+
+
+% \cehead[]{\includegraphics[height=2cm]{images/header_acep_uaf.jpg}} Header with graphics
