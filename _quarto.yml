@@ -55,8 +55,8 @@ format:
     papersize: a4
 
     fontsize: 11pt
-    mainfont: "Arial"
-    sansfont: "Arial"
+    # mainfont: "Arial"
+    # sansfont: "Arial"
     # monofont: "Courier New"
 
     geometry:
