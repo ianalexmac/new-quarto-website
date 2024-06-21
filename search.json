@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Alaska Electricity Trends Report",
+    "title": "2024 Alaska Electricity Trends Report",
     "section": "",
     "text": "Welcome\nThis interactive report summarizes electricity data gathered from federal, state, and utility sources and presented in the form of a web book. It provides an overview of electricity capacity, generation, consumption, and price trends from 2011 to 2021. A comprehensive report highlighting these trends has not been produced for the state of Alaska since 2013’s Alaska Energy Statistics Report.\nThis web book is designed as ‘best available’ document for the 2011-2021 energy trends data and reports. This website will be updated when updates to the underlying 2011-2021 data or fixes become available. Future year trends reports will be tackled in a different context and reporting structure.\nPlease explore the data using the chapter navigation links in the left sidebar and the section navigation links in the right sidebar.",
     "crumbs": [
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
-    "title": "Alaska Electricity Trends Report",
+    "title": "2024 Alaska Electricity Trends Report",
     "section": "",
     "text": "0.0.1 How to Cite\ninclude _citations.qmd",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#executive-summary",
     "href": "index.html#executive-summary",
-    "title": "Alaska Electricity Trends Report",
+    "title": "2024 Alaska Electricity Trends Report",
     "section": "Executive Summary",
     "text": "Executive Summary\nThe objective of this work is to provide regulators, legislators, and other energy stakeholders with a holistic look at recent trends in electrical generation. The first impetus for this report is a lack of combined reporting on electricity generation across the state that extends to federally and non-federally regulated electric utilities (most of Alaska’s electric utilities do not meet the minimum threshold for federal reporting requirements). The second impetus for this report is to aid in decision-making processes surrounding Alaska’s energy future.\nWith uncertainty in natural gas sources on the Railbelt, technological advancements in generation technology, and improvements in the affordability of technologies, understanding trends in the state’s capacity, generation, consumption, and prices is vital to more informed decision-making.\nIn this report, we present data collected from federal, state, and local sources supplemented by correspondence with utilities. We show trends for capacity, generation, consumption, and prices. The capacity and generation trends include data from 2011 to 2021, and the consumption and prices trends are data limited to 2019. More information on sources and methods are provided in the subsequent sections throughout the report. This report uses data visualizations as the primary mode for presenting the trends. To accommodate this presentation style, we present trends as simplified regions of the state as opposed to the Alaska Energy Authority energy regions.\nWe emphasize that this report is designed to provide factual information to the best of our ability without providing recommendations or in-depth analysis. However, context is provided for more impactful trends.",
     "crumbs": [
@@ -32,7 +32,7 @@
   {
     "objectID": "index.html#key-takeaways",
     "href": "index.html#key-takeaways",
-    "title": "Alaska Electricity Trends Report",
+    "title": "2024 Alaska Electricity Trends Report",
     "section": "Key Takeaways",
     "text": "Key Takeaways\n\n0.0.2 Capacity\n\nGeneration capacity on average increased across all of Alaska from 2011 to 2021.\nThe state saw large increases in renewable energy capacity, storage, and on-demand peaking units.\n\n\n\n0.0.3 Generation\n\nNet generation has remained relatively stable\nThe Coastal region generated more power from wind and hydro, but less from oil in 2021 than in 2011.\nThe Railbelt region generated more power from wind, hydro, coal, and solar, but less from oil and gas in 2021 than in 2011.\nThe Rural Remote region generated more power from wind and solar, but less from oil and hydro in 2021 than in 2011.\nWe have seen significant increases in the usage of utility-scale battery storage.\n\n\n\n0.0.4 Consumption\n\nElectricity consumption overall has fallen for all customer classes, with residential customers seeing the most reductions.\nThe number of customer accounts have continued to increase throughout the state.\nPer capita consumption for the residential sector is highest in the Coastal region and lowest in the Rural Remote region.\n\n\n\n0.0.5 Prices\n\nResidential electricity rates increased on average across Alaska after adjusting for inflation, the PCE subsidy, and population weighting.\nThe region that experienced the least residential rate increase was the Coastal region with a 6% increase.\nThe region experiencing the highest residential rate increase was the Railbelt with a 26% increase.\nCommercial and Other customers in the Coastal and Rural Remote regions saw rate decreases where Commercial customers in the Railbelt region saw price increases of about 15%.\nPCE subsidies continue to dampen residential prices in the Coastal and Rural Remote regions.",
     "crumbs": [
@@ -54,7 +54,7 @@
     "href": "credits.html#acknowledgements",
     "title": "2  Acknowledgements and Roles",
     "section": "",
-    "text": "2.1.1 Funding\nFunding support for this team was provided by leveraging support from multiple partners that include:\n\nOffice of Naval Research’s (ONR) Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) program (award #N00014-19-1-2235)\nDenali Commission - Alaska Energy Project Partnerships (award #1659)\nState of Alaska\n\nNote: Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funding supporters.\n\n\n2.1.2 Partners\n\nAlaska Center for Energy and Power (ACEP) at the University of Alaska Fairbanks (UAF)\nInstitute of Social and Economic Research (ISER) at the University of Alaska Anchorage (UAA)\nAlaska Energy Authority (AEA)\nDOWL Engineering (DOWL)\n\nData used in the energy workbooks comes from a variety of sources and partners, but special thanks to the Alaska Energy Authority for partnering with the team to make the base line power cost equalization datasets available. Without this openness, this report would not be possible. We would also like to thank the utilities who responded directly when we had questions. A full list of these organizations has been complied in ?sec-sources.",
+    "text": "2.1.1 Funding\nFunding support for this team was provided by leveraging support from multiple partners that include:\n\nOffice of Naval Research’s (ONR) Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) program (award #N00014-19-1-2235)\nDenali Commission - Alaska Energy Project Partnerships (award #1659)\nState of Alaska\n\nNote: Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funding supporters.\n\n\n2.1.2 Partners\n\nAlaska Center for Energy and Power (ACEP) at the University of Alaska Fairbanks (UAF)\nInstitute of Social and Economic Research (ISER) at the University of Alaska Anchorage (UAA)\nAlaska Energy Authority (AEA)\nDOWL Engineering (DOWL)\n\nData used in the energy workbooks comes from a variety of sources and partners, but special thanks to the Alaska Energy Authority for partnering with the team to make the base line power cost equalization datasets available. Without this openness, this report would not be possible. We would also like to thank the utilities who responded directly when we had questions. A full list of these organizations has been complied in Section 4.1.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Acknowledgements and Roles</span>"
     ]
@@ -90,53 +90,103 @@
     ]
   },
   {
+    "objectID": "methods.html",
+    "href": "methods.html",
+    "title": "4  Methods",
+    "section": "",
+    "text": "4.1 Data Sources\nThe data in this report was collected from a variety of sources that are listed below. Most electric utilities throughout the state are not required to submit annual reports to the federal government due to their size and/or number of customers. Therefore, our data sources encompass federal, state, commercial, and local filings as well as direct communications with utilities and state program managers. Each section of the report pulls data from a variety of these sources. The data was downloaded directly from the original sources and concatenated to develop a dataset for this report. In some cases, a single observation is derived from multiple sources due to reporting limitations.\nBelow are relevant sources of data for the report.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#sec-sources",
+    "href": "methods.html#sec-sources",
+    "title": "4  Methods",
+    "section": "",
+    "text": "4.1.1 Federal\n\nEnergy Information Administration\n\nEIA-860\nEIA-861\nEIA-923\n\nFederal Energy Regulatory Commission\n\nForm 1\n\n\n\n\n4.1.2 State\n\nAlaska Energy Authority\n\nPower Cost Equalization Program Utility Monthly Reports\n\nRegulatory Authority of Alaska\n\nAnnual filings\n\n\n\n\n4.1.3 Direct Communications\n\nAlaska Energy Authority\n\nHydro/Wind Program Managers\nVillage and Powerhouse Assessments\n\nElectric Utilities\n\n\n\n4.1.4 Commercial Sources\n\nIntelligent Energy Systems\n\n\n\n4.1.5 Compilation\nNeil McMahon, first at AEA and then at DOWL, an Alaska engineering firm, did the preliminary compilation of data and developed the Excel workbooks that support this report. This step involved careful cross-referencing of assets between the various data sources and error checking by domain experts. At this point, aggregate calculations were created to match the tables found in previous Alaska Energy Statistics Reports. Data in this report were derived from those workbooks exported to CSV files; the original workbooks are available via a GitHub repo ak-energy-statistics-2011_2021.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#regional-summaries",
+    "href": "methods.html#regional-summaries",
+    "title": "4  Methods",
+    "section": "4.2 Regional Summaries",
+    "text": "4.2 Regional Summaries\nFor the purpose of energy planning, AEA has defined eleven energy regions for the State of Alaska. Previous versions of the Alaska Electric Energy Statistics reports presented data summarized by those regions. In order to provide visualizations that are easier to understand, we have condensed these eleven regions into three major energy regions: Coastal, Railbelt, and Rural Remote. Figure 4.1 shows the diagrammatic relationship between these two classification systems and ?fig-regions-map displays this relationship cartographically.\nWe note that the Coastal and Rural Remote regions include mixtures of Power Cost Equalization (PCE) and non-PCE eligible communities. The Coastal region includes Copper River/Chugach and incorporates all communities served by Copper Valley Electric Association. PCE communities are largely dependent on diesel generation.\n \n\n\n\nFigure 4.1: Schematic Relationship between Energy Regions as defined by AEA and ACEP\n\n\n\n\n\n\n\n \n{{ include _regions_map.qmd }}",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#sec-pce-description",
+    "href": "methods.html#sec-pce-description",
+    "title": "4  Methods",
+    "section": "4.3 Power Cost Equalization (PCE)",
+    "text": "4.3 Power Cost Equalization (PCE)\nAlaska is famous for wide expanses of rugged terrain. Towns are often extremely distant from one another, or are separated by inaccessible mountains and glaciers. The utility landscape of Alaska resembles a sea of islands, very different from the interconnected grids of the contiguous United States.\nIn total, Alaska contains over 100 separate utilities, many of which serve a single, small community. Most rely on diesel generators connected to huge fuel tanks, which receive a barge shipment of fuel in the summer that must last through the winter. If the town runs out of fuel during winter months, additional fuel has to be flown in at extreme expense. Predictably, electricity in these remote towns is extremely expensive.\nSome rural towns pay 3 to 5 times the rates of urban Alaska. Urban Alaska has greatly benefited from large state-subsidized energy projects, such as the Bradley Lake Hydroelectric Project, the Four Dam Pool Projects, and the Alaska Intertie. In an effort to confer similar benefits to rural Alaska, the state of Alaska developed the Power Cost Equalization Program (PCE).\nThe PCE program reimburses rural utilities for credits that have been provided to eligible customers. Eligibility is limited to residential customers and community facilities. The subsidy applies to the first 750 kWh per month of residential consumption. Community facilities are subsidized up to the first 70 kWh per month per resident. The program is administered by the Regulatory Commission of Alaska (RCA) and the Alaska Energy Authority (AEA).\nPlease visit the Alaska Energy Authority PCE webpage for more information about the Power Cost Equalization program.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#feedback-regarding-potential-errors",
+    "href": "methods.html#feedback-regarding-potential-errors",
+    "title": "4  Methods",
+    "section": "4.4 Feedback Regarding Potential Errors",
+    "text": "4.4 Feedback Regarding Potential Errors\nSince these data come from multiple sources, there is potential for errors in its compilation. An integral part of this effort is the creation of a high quality dataset that can constructively contribute to future work. Therefore, any discrepancies or noted errors should be reported using email or GitHub issues via the links in the right hand navigation menu of every page. Alternatively, direct contact information for members of the DCM team is listed in Section 2.2.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
     "objectID": "prices.html",
     "href": "prices.html",
-    "title": "4  Price of Electricity",
+    "title": "5  Price of Electricity",
     "section": "",
-    "text": "4.1 General Overview\nUtilities in Alaska serve multiple customers, namely residential, commercial, industrial, government/municipal, and community customer classes. Each customer class experiences a different set of costs such as per kWh charge as well as monthly customer charges. In this section, we aim to highlight trends in electricity prices for the residential, commercial, and other customer classes across the Coastal, Railbelt, and Rural Remote regions. We again restrict the data years in this section to 2011 to 2019 due to concerns with data validity for 2020-21.\nIn rural areas, many communities are eligible to participate in the PCE program (described in ?sec-pce-description). It is important to note that the prices presented here reflect the post-PCE adjustment and are annualized averages based on the calendar year. Yearly average effective rates listed here reflect the calendar year and not the fiscal year, which will make them different from those reported in the AEA’s annual reports. We also note that for PCE communities, the rates are reported in the original data. For data sourced from the EIA, rates were calculated by dividing total revenue by total kWh sold in each customer class - this may overestimate the rate as this would include revenue from customer charges.\nNote that all prices in this section have been adjusted for inflation over time to 2021 dollars using the Bureau of Labor Statistics (BLS) Consumer Price Index (CPI) for all items in urban Alaska (BLS CUUSA427SA0). To our knowledge, there is no CPI that properly accounts for price changes over time in rural Alaska. However, the general trend shows that customer account-weighted prices have been relatively stagnant across all regions of the state.",
+    "text": "5.1 General Overview\nUtilities in Alaska serve multiple customers, namely residential, commercial, industrial, government/municipal, and community customer classes. Each customer class experiences a different set of costs such as per kWh charge as well as monthly customer charges. In this section, we aim to highlight trends in electricity prices for the residential, commercial, and other customer classes across the Coastal, Railbelt, and Rural Remote regions. We again restrict the data years in this section to 2011 to 2019 due to concerns with data validity for 2020-21.\nIn rural areas, many communities are eligible to participate in the PCE program (described in Section 4.3). It is important to note that the prices presented here reflect the post-PCE adjustment and are annualized averages based on the calendar year. Yearly average effective rates listed here reflect the calendar year and not the fiscal year, which will make them different from those reported in the AEA’s annual reports. We also note that for PCE communities, the rates are reported in the original data. For data sourced from the EIA, rates were calculated by dividing total revenue by total kWh sold in each customer class - this may overestimate the rate as this would include revenue from customer charges.\nNote that all prices in this section have been adjusted for inflation over time to 2021 dollars using the Bureau of Labor Statistics (BLS) Consumer Price Index (CPI) for all items in urban Alaska (BLS CUUSA427SA0). To our knowledge, there is no CPI that properly accounts for price changes over time in rural Alaska. However, the general trend shows that customer account-weighted prices have been relatively stagnant across all regions of the state.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Price of Electricity</span>"
     ]
   },
   {
     "objectID": "prices.html#sec-prices",
     "href": "prices.html#sec-prices",
-    "title": "4  Price of Electricity",
+    "title": "5  Price of Electricity",
     "section": "",
-    "text": "4.1.1 Regional Overview\n?fig-price-regions-classes shows the distribution of prices across a selected customer class. The three classes used in this analysis can be selected from the dropdown menu. Hover your pointer over the dot to display utility information.\nMost notably, the dramatic effects of the PCE subsidy can be seen by comparing the price distribution of the residential customer class against the price distribution of the commercial/other customer classes in the Rural Remote and Coastal regions.\n\n\n\n4.1.2 Regional Averages\nDue to the wide range of electricity prices in Alaska, it is difficult to accurately summarize the data. Because of this, we determined that averages were best calculated using a customer account weighted average. Population is roughly correlated to price, with small communities experiencing higher rates than larger communities. The average number of customer accounts for the year was used to calculate the weighted arithmetic mean price for each year and region. ?fig-price-over-time is a graph of residential customer prices over time after weighting for the number of customer accounts.\n\n\n\n\n\n\n\n[1] \"HTML code block active\"",
+    "text": "5.1.1 Regional Overview\n?fig-price-regions-classes shows the distribution of prices across a selected customer class. The three classes used in this analysis can be selected from the dropdown menu. Hover your pointer over the dot to display utility information.\nMost notably, the dramatic effects of the PCE subsidy can be seen by comparing the price distribution of the residential customer class against the price distribution of the commercial/other customer classes in the Rural Remote and Coastal regions.\n\n\n\n5.1.2 Regional Averages\nDue to the wide range of electricity prices in Alaska, it is difficult to accurately summarize the data. Because of this, we determined that averages were best calculated using a customer account weighted average. Population is roughly correlated to price, with small communities experiencing higher rates than larger communities. The average number of customer accounts for the year was used to calculate the weighted arithmetic mean price for each year and region. ?fig-price-over-time is a graph of residential customer prices over time after weighting for the number of customer accounts.\n\n\n\n\n\n\n\n[1] \"HTML code block active\"",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Price of Electricity</span>"
     ]
   },
   {
     "objectID": "prices.html#coastal",
     "href": "prices.html#coastal",
-    "title": "4  Price of Electricity",
-    "section": "4.2 Coastal",
-    "text": "4.2 Coastal\n?fig-price-sector-coastal shows the average price of electricity in the Coastal region for each customer class and year. Between 2011 and 2019, the region experienced decreasing prices for Commercial and Other customers, while Residential customers have seen a slight increase in price.\nThe average real price (in 2021 dollars) of electricity for Residential customers in the Coastal region rose {ojs} coastal_res_change% from {ojs} coastal_res_2011 cents/kWh in 2011 to {ojs} coastal_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Coastal region fell {ojs} coastal_com_change% from {ojs} coastal_com_2011 cents/kWh in 2011 to {ojs} coastal_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Coastal region fell {ojs} coastal_other_change% from {ojs} coastal_other_2011 cents/kWh in 2011 to {ojs} coastal_other_2019 cents/kWh in 2019.\nResidential customers in the Coastal region saw increases in the price of electricity while commercial and other customers saw decreases. However, the residential customer class continues to pay the lowest per kWh in the region due to a combination of low prices in high population areas and PCE subsidies in eligible communities.",
+    "title": "5  Price of Electricity",
+    "section": "5.2 Coastal",
+    "text": "5.2 Coastal\n?fig-price-sector-coastal shows the average price of electricity in the Coastal region for each customer class and year. Between 2011 and 2019, the region experienced decreasing prices for Commercial and Other customers, while Residential customers have seen a slight increase in price.\nThe average real price (in 2021 dollars) of electricity for Residential customers in the Coastal region rose {ojs} coastal_res_change% from {ojs} coastal_res_2011 cents/kWh in 2011 to {ojs} coastal_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Coastal region fell {ojs} coastal_com_change% from {ojs} coastal_com_2011 cents/kWh in 2011 to {ojs} coastal_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Coastal region fell {ojs} coastal_other_change% from {ojs} coastal_other_2011 cents/kWh in 2011 to {ojs} coastal_other_2019 cents/kWh in 2019.\nResidential customers in the Coastal region saw increases in the price of electricity while commercial and other customers saw decreases. However, the residential customer class continues to pay the lowest per kWh in the region due to a combination of low prices in high population areas and PCE subsidies in eligible communities.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Price of Electricity</span>"
     ]
   },
   {
     "objectID": "prices.html#railbelt",
     "href": "prices.html#railbelt",
-    "title": "4  Price of Electricity",
-    "section": "4.3 Railbelt",
-    "text": "4.3 Railbelt\n?fig-price-sector-railbelt shows the average price of electricity in the Railbelt region for each customer class and each year of the report. Between 2011 and 2019, Other customers saw a large decrease in price, followed by a gradual increase. Residential and Commercial customers experienced slight decreases in price until 2013 when prices reversed and rose dramatically.\nThe average real price of electricity for Residential customers in the Railbelt rose {ojs} railbelt_res_change% from {ojs} railbelt_res_2011 cents/kWh in 2011 to {ojs} railbelt_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Railbelt rose {ojs} railbelt_com_change% from {ojs} railbelt_com_2011 cents/kWh in 2011 to {ojs} railbelt_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Railbelt fell {ojs} railbelt_other_change% from {ojs} railbelt_other_2011 cents/kWh in 2011 to {ojs} railbelt_other_2019 cents/kWh in 2019.\nThis region differs significantly from the Coastal and Rural Remote regions in that residential customers pay more for electricity than the Commercial or Other customer classes.",
+    "title": "5  Price of Electricity",
+    "section": "5.3 Railbelt",
+    "text": "5.3 Railbelt\n?fig-price-sector-railbelt shows the average price of electricity in the Railbelt region for each customer class and each year of the report. Between 2011 and 2019, Other customers saw a large decrease in price, followed by a gradual increase. Residential and Commercial customers experienced slight decreases in price until 2013 when prices reversed and rose dramatically.\nThe average real price of electricity for Residential customers in the Railbelt rose {ojs} railbelt_res_change% from {ojs} railbelt_res_2011 cents/kWh in 2011 to {ojs} railbelt_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Railbelt rose {ojs} railbelt_com_change% from {ojs} railbelt_com_2011 cents/kWh in 2011 to {ojs} railbelt_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Railbelt fell {ojs} railbelt_other_change% from {ojs} railbelt_other_2011 cents/kWh in 2011 to {ojs} railbelt_other_2019 cents/kWh in 2019.\nThis region differs significantly from the Coastal and Rural Remote regions in that residential customers pay more for electricity than the Commercial or Other customer classes.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Price of Electricity</span>"
     ]
   },
   {
     "objectID": "prices.html#rural-remote",
     "href": "prices.html#rural-remote",
-    "title": "4  Price of Electricity",
-    "section": "4.4 Rural Remote",
-    "text": "4.4 Rural Remote\n?fig-price-sector-rural shows the average price of electricity in the Rural Remote region for each customer class and year of the report. Between 2011 and 2019, Residential customers experienced a gradual increase in rates, while Commercial and Other customers experienced a gradual decrease in rates.\nThe average price of electricity for the Residential customers in the Rural Remote region rose {ojs} rural_res_change% from {ojs} rural_res_2011 cents/kWh in 2011 to {ojs} rural_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Rural Remote region fell {ojs} rural_com_change% from {ojs} rural_com_2011 cents/kWh in 2011 to {ojs} rural_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Rural Remote region fell {ojs} rural_other_change% from {ojs} rural_other_2011 cents/kWh in 2011 to {ojs} rural_other_2019 cents/kWh in 2019.",
+    "title": "5  Price of Electricity",
+    "section": "5.4 Rural Remote",
+    "text": "5.4 Rural Remote\n?fig-price-sector-rural shows the average price of electricity in the Rural Remote region for each customer class and year of the report. Between 2011 and 2019, Residential customers experienced a gradual increase in rates, while Commercial and Other customers experienced a gradual decrease in rates.\nThe average price of electricity for the Residential customers in the Rural Remote region rose {ojs} rural_res_change% from {ojs} rural_res_2011 cents/kWh in 2011 to {ojs} rural_res_2019 cents/kWh in 2019. The average price of electricity for Commercial customers in the Rural Remote region fell {ojs} rural_com_change% from {ojs} rural_com_2011 cents/kWh in 2011 to {ojs} rural_com_2019 cents/kWh in 2019. Finally, the average price of electricity for Other customers in the Rural Remote region fell {ojs} rural_other_change% from {ojs} rural_other_2011 cents/kWh in 2011 to {ojs} rural_other_2019 cents/kWh in 2019.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Price of Electricity</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Price of Electricity</span>"
     ]
   },
   {
@@ -188,7 +238,7 @@
     "href": "setup.html#renv-package-management",
     "title": "Appendix B — Setup",
     "section": "B.2 renv Package Management",
-    "text": "B.2 renv Package Management\nPackages in this repo are managed by renv. The workflow takes a second to get used to, but doesn’t have to be a big deal. Similar to npm, renv is globally installed on your system independent of the repo environment.\nOnce the repository has been cloned to your computer and renv is installed on your system, install the necessary R dependencies:\n1. In a terminal window, navigate to the root directory of the repo\n2. Start R by typing R and pressing Enter\n3. In the resulting R console, run the following command\nrenv::restore() #installs packages in the `renv.lock` file  \nAs you write code that needs additional packages, include them at the top of your scripts as library(\"new-package\"). Then, before committing, run steps 1 through 3 above, but use renv::snapshot() in step 3. This will comb through the repo to look for packages not in the renv.lock file. When you are prompted for a selection, select option 2: \"Install the packages, then snapshot\" to bring the new packages into the fold.\nNote: To get you started, the renv.lock file of this repo includes all tidyverse packages",
+    "text": "B.2 renv Package Management\nPackages in this repo are managed by renv. The workflow takes a second to get used to, but doesn’t have to be a big deal. Similar to npm, renv is globally installed on your system independent of the repo environment.\nOnce the repository has been cloned to your computer and renv is installed on your system, install the necessary R dependencies:\n1. In a terminal window, navigate to the root directory of the repo\n2. Start R by typing R and pressing Enter\n3. In the resulting R console, run the following command\n\nrenv::restore() #installs packages in the `renv.lock` file  \n\nAs you write code that needs additional packages, include them at the top of your scripts as library(\"new-package\"). Then, before committing, run steps 1 through 3 above, but use renv::snapshot() in step 3. This will comb through the repo to look for packages not in the renv.lock file. When you are prompted for a selection, select option 2: \"Install the packages, then snapshot\" to bring the new packages into the fold.\nNote: To get you started, the renv.lock file of this repo includes all tidyverse packages",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Setup</span>"
