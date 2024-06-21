@@ -55,7 +55,7 @@ format:
     papersize: a4
 
     fontsize: 11pt
-    mainfont: "Times New Roman"
+    mainfont: "Arial"
     sansfont: "Arial"
     # monofont: "Courier New"
 
