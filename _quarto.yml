@@ -3,10 +3,15 @@ project:
 
 book:
   page-navigation: true
-  title: Alaska Electricity Trends Report 
-  subtitle: Something profound and illuminating.
-  author: ACEP Data Team
+  title: 2024 Alaska Electricity Trends Report 
+  subtitle: Federal, state, and utility electricity data for Alaska, 2011-2021
+  author:
+    - name: "ACEP Data Team"
+      affiliations:
+        - name: "University of Alaska Fairbanks"
   description: Demonstration of Quarto's ability to render both HTML and PDF.
+  date: June 2024
+  date-format: "MMMM YYYY"
   # site-url: "https://ianalexmac.github.io/new-quarto-website/" 
   repo-url: https://github.com/ianalexmac/new-quarto-website
   repo-actions: [issue]
@@ -29,6 +34,7 @@ book:
     - index.qmd
     - credits.qmd
     - acronyms.qmd
+    - methods.qmd
     - prices.qmd
   appendices:
     - about.qmd
@@ -44,9 +50,39 @@ format:
     css: styles.css
     toc: true
   pdf:
+    pdfengine: xelatex
     documentclass: scrreprt
+    papersize: a4
+
+    fontsize: 11pt
+    mainfont: "Times New Roman"
+    sansfont: "Arial"
+    # monofont: "Courier New"
+
+    geometry:
+      - inner=3cm
+      - outer=3cm
+      - top=3cm
+      - bottom=3cm
+      - headsep=22pt
+      - headheight=11pt
+      - footskip=33pt
+      - ignorehead
+      - ignorefoot
+      - heightrounded
+
+    toc: true
+    toc-depth: 3
+    toc-title: "Table of contents"
+    lof: true
+    lot: true
+    number-sections: true
+    number-depth: 2
+
     template-partials:
       - before-body.tex
+
+    include-in-header: include-in-header.tex
 
 filters:
   - quarto

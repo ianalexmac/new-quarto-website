@@ -1,0 +1,22 @@
+\usepackage{graphicx}
+\usepackage{scrlayer-scrpage}
+
+\addtokomafont{disposition}{\rmfamily}
+\KOMAoptions{chapterprefix=true,appendixprefix=true}
+\KOMAoptions{headings=small}
+
+\setkomafont{pageheadfoot}{\normalfont\normalcolor\footnotesize}
+\setkomafont{pagenumber}{\normalfont\normalcolor\footnotesize}
+
+\lefoot[]{}
+\cefoot[\pagemark]{}
+\refoot[]{}
+\lofoot[]{}
+\cofoot[\pagemark]{}
+\rofoot[]{}
+\lehead[]{}
+\cehead[]{\includegraphics[height=1cm]{images/header_acep_uaf.jpg}} % Not working, debug
+\rehead[]{\leftmark}
+\lohead[]{\rightmark}
+\cohead[]{}
+\rohead[]{}

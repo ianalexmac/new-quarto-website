@@ -22,7 +22,9 @@ Once the repository has been cloned to your computer and `renv` is installed on 
 1. In a terminal window, navigate to the root directory of the repo  
 2. Start R by typing `R` and pressing Enter  
 3. In the resulting R console, run the following command  
-```  
+```{r}
+#| eval: false
+#| echo: true
 renv::restore() #installs packages in the `renv.lock` file  
 ```  
 

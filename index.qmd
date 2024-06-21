@@ -31,4 +31,3 @@ include _citations.qmd
 ## Key Takeaways {.unnumbered}
 
 {{< include _key_takeaways.qmd >}}
-
