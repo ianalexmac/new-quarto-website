@@ -1,0 +1,469 @@
+---
+title: "Installed Capacity"
+subtitle: "Total Installed Capacity by Certified Utilities in Alaska, 2011-2021"
+date-modified: "2024-04-11T09:11:00-08:00"
+date-format: "MMM D, YYYY [at] HH:mm z"
+output:
+  quarto::quarto_html:
+    pre_processor: quarto::observable
+cap-location: top
+echo: false
+---
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE}
+# Import required packages
+library(tidyr)
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(scales)
+
+# Import the data
+capacity_data <- read.csv("data/working/capacity/capacity_long.csv")
+
+# Regional capacity
+regional_capacity <- capacity_data %>%
+  group_by(year,acep_region,prime_mover) %>%
+  summarize(
+    "total_capacity" = sum(capacity, na.rm = TRUE)
+  )
+
+# Function declaration
+source("scripts/inline_functions/capacity_inline_functions.R")
+```
+
+## General Overview {#sec-capacity}
+
+Generation capacity represents the maximum amount of electricity that can be generated at any given time dependent on certain conditions. The combination of generation sources is often referred to as the capacity mix. Changes in the capacity mix over time reflect decisions to build and retire generators. These decisions are a result of shifting costs, technological innovations, the normal aging of the generation fleet, and/or stakeholder policies. Due to data limitations, we show capacity levels for calendar years 2011-2013, 2018, and 2021. While we cannot observe year-to-year trends, there are enough years of data to visualize capacity trends from 2011 to 2021.
+
+We begin this section by showcasing the increases in total capacity across the state. In 2011, it is estimated that the total statewide electricity generation capacity was `r capacity(year=2011)` MW. We estimate that this has increased to approximately `r capacity(year=2021)` MW in 2021 based on best available data. This represents an increase of `r formatC(capacity(year=2021, numeric_out = TRUE) - capacity(year=2011, numeric_out = TRUE), format="d", big.mark=",")` MW, or `r round((capacity(year=2021, numeric_out = TRUE) - capacity(year=2011, numeric_out = TRUE))/abs(capacity(year=2011, numeric_out = TRUE)),2)*100` percent increase since 2011. To illustrate this example, we show a stacked area chart in @fig-capacity-state that showcases growth over time for various technologies.[^1]
+
+[^1]: Prime movers are categorized as follows. Fossil turbines include combined cycle turbines, gas turbines, and steam turbines. Reciprocating engines include internal combustion engines. Hydro includes hydraulic turbines and hydrokinetics. Wind includes wind turbines. Utility solar includes utility-owned photovoltaic (PV), and Rooftop solar includes customer-sited, behind-the-meter PV. Storage refers to batteries and flywheels.
+
+
+```{ojs}
+//| label: fig-capacity-state
+//| fig-cap: "Capacity Changes, Statewide"
+
+Plot.plot({
+  // Configure the plot
+  //title: "Capacity changes, Statewide",
+  insetLeft: 0,
+  insetRight: 0,
+  width: width,
+  
+  // Configure the x-axis
+  x: {
+    tickFormat: "d",
+    label: "Year",
+    //domain: [2011,2012,2013,2018,2021]
+  },
+  // Configure the y-axis
+  y: {
+    grid: true,
+    label: "Capacity (MW)"
+  },
+
+  // Stacked area plot
+  marks: [
+    Plot.areaY(cap_data,
+      Plot.groupX(
+        {
+          y: "sum"
+        },
+        {
+          x: "year",
+          y: "capacity",
+          fill: "Prime Mover",
+          order: ["Fossil Turbines", "Recip Engines", "Hydro", "Wind","Utility Solar","Rooftop Solar","Storage","Landfill Gas"],
+          tip: {format: {x: "d"}}
+        }
+      )
+    ),
+    Plot.ruleY([0])
+  ],
+  
+  // Configure the color scheme
+  color: {
+        domain: ["Fossil Turbines", "Recip Engines", "Hydro", "Wind","Utility Solar","Rooftop Solar","Storage","Landfill Gas"],
+        range: ["#606571", "#9da7bf", "#00a1b7", "#F79646", "#fad900","#9BBB59","#71346a","#896D09"],
+        legend: true
+    }
+})
+```
+
+
+```{r}
+agg_cap <- capacity_data %>%
+  group_by(prime_mover, year) %>%
+  summarize(sum_capacity = sum(capacity), .groups = 'drop') %>%
+  mutate(prime_mover = factor(
+    prime_mover, 
+    levels = c(
+        "Landfill Gas", 
+        "Storage",
+        "Rooftop Solar",
+        "Utility Solar",
+        "Wind",  
+        "Hydro", 
+        "Recip Engines",
+        "Fossil Turbines"
+        )))
+
+```
+
+
+```{r, fig.width=8}
+
+ggplot(agg_cap, aes(x = year, y = sum_capacity, fill = prime_mover)) +
+  geom_area(position = "stack") + 
+  scale_x_continuous(
+    breaks = seq(min(agg_cap$year), max(agg_cap$year), by = 1), 
+    limits = c(min(agg_cap$year), max(agg_cap$year)), 
+    expand = c(0, 0), 
+    name = "Year") + 
+  scale_y_continuous(name = "Capacity (MW)", labels = comma) + 
+  scale_fill_manual(
+    values = c(
+      "Fossil Turbines" = "#606571",
+      "Recip Engines" = "#9da7bf",
+      "Hydro" = "#00a1b7",
+      "Wind" = "#F79646",
+      "Utility Solar" = "#fad900",
+      "Rooftop Solar" = "#9BBB59",
+      "Storage" = "#71346a",
+      "Landfill Gas" = "#896D09"), 
+    name = "Prime Mover") + 
+  guides(fill = guide_legend(nrow = 1, reverse = T)) + 
+  theme_minimal() + 
+  theme(
+    legend.position="top", 
+    legend.title=element_blank(),
+    panel.grid.major.x = element_blank(), 
+    panel.grid.minor.x = element_blank(), 
+    legend.text = element_text(size = 8)
+    ) + 
+  labs(title = "Capacity Changes, Statewide", y = "Capacity (MW)")
+
+
+```
+
+
+
+## Coastal
+
+For the coastal region, we observe a `r capacity_delta("Coastal")` MW increase in generation capacity (an increase of approximately `r capacity_delta("Coastal", pct=TRUE)` percent) between 2011 and 2021. @fig-capacity-coastal shows the change in total installed capacity for each prime mover in the coastal region. This region saw additions of `r capacity_delta("Coastal", prime_mover = "Fossil Turbines")` MW of fossil turbines, and `r capacity_delta("Coastal", prime_mover = "Recip Engines")` MW of reciprocating engines. The remaining increases were renewable and storage capacity which we look at in more depth in @fig-capacity-coastal-renewable.
+
+```{ojs}
+//| label: fig-capacity-coastal
+//| fig-cap: "Coastal Region Capacity"
+
+Plot.plot({
+  // Configure the x-axis
+  x: {
+    tickFormat: "d",
+    type: "band",
+    label: "Year"
+  },
+  // Configure the y-axis
+  y: {
+    grid: true,
+    label: "Capacity (MW)"
+  },
+  // Configure the plot
+  //title: "Coastal region capacity",
+  insetLeft: 0,
+  insetRight: 0,
+  width: width,
+
+  // Stacked area plot
+  marks: [
+    Plot.barY(cap_data.filter((d) => d.acep_region === "Coastal" && d.capacity !== 0.0),
+      Plot.groupX(
+        {
+          y: "sum"
+        },
+        {
+          x: "year",
+          y: "capacity",
+          fill: "Prime Mover",
+          order: ["Fossil Turbines", "Recip Engines", "Hydro", "Wind","Storage"],
+          tip: {format: {x: "d"}}
+        }
+      )
+    ),
+    Plot.ruleY([0])
+  ],
+  // Configure the color scheme
+  color: {
+        domain: ["Fossil Turbines", "Recip Engines", "Hydro", "Wind","Storage"],
+        range: ["#606571", "#9da7bf", "#00a1b7", "#F79646", "#71346a"],
+        legend: true
+    }
+})
+```
+
+Across the `r capacity_delta(region = "Coastal", numeric_out = TRUE) - capacity_delta(region = "Coastal", prime_mover = "Fossil Turbines", numeric_out = TRUE) - capacity_delta(region = "Coastal", prime_mover = "Recip Engines", numeric_out = TRUE)` MW of added renewable and storage capacity <!--the remaining capacity expansions-->, hydropower accounted for the bulk of the capacity additions with `r capacity_delta("Coastal", prime_mover = "Hydro")` MW. Storage capacity increased by `r capacity_delta("Coastal", prime_mover = "Storage")` MW and wind generation capacity increased by `r capacity_delta("Coastal", prime_mover = "Wind")` MW. Between 2013 and 2018, significant hydropower additions were made in the Southeast (19.4 MW), Kodiak (11.3 MW), and the Copper-River/Chugach (6.5 MW) AEA energy regions.
+
+```{ojs}
+//| label: fig-capacity-coastal-renewable
+//| fig-cap: "Coastal Region Renewable Capacity"
+
+Plot.plot({
+  // Configure the x-axis
+  x: {
+    tickFormat: "d",
+    type: "band",
+    label: "Year"
+  },
+  // Configure the y-axis
+  y: {
+    grid: true,
+    label: "Capacity (MW)"
+  },
+  // Configure the plot
+  //title: "Coastal region renewable capacity",
+  insetLeft: 0,
+  insetRight: 0,
+  width: width,
+
+  // Stacked area plot
+  marks: [
+    Plot.barY(cap_data.filter((d) => d.acep_region === "Coastal" && d.capacity !== 0.0 && d.prime_mover !== "Fossil Turbines" && d.prime_mover !== "Recip Engines"),
+      Plot.groupX(
+        {
+          y: "sum"
+        },
+        {
+          x: "year",
+          y: "capacity",
+          fill: "Prime Mover",
+          order: ["Hydro", "Wind","Storage"],
+          tip: {format: {x: "d"}}
+        }
+      )
+    ),
+    Plot.ruleY([0])
+  ],
+  // Configure the color scheme
+  color: {
+        domain: ["Hydro", "Wind","Storage"],
+        range: ["#00a1b7", "#F79646", "#71346a"],
+        legend: true
+    }
+})
+```
+
+
+## Railbelt
+For the Railbelt region, capacity additions were dominated by more-efficient fossil fuel generating units and new battery storage. These additions are visualized in @fig-capacity-railbelt. There were `r capacity_delta("Railbelt")` MW of capacity additions between 2011 and 2021. The Railbelt region saw `r capacity_delta("Railbelt", prime_mover = "Recip Engines")` MW of reciprocating engine additions and `r capacity_delta("Railbelt", prime_mover = "Fossil Turbines")` MW of fossil fuel turbines. The remaining capacity additions were renewables and storage and are shown in @fig-capacity-railbelt-renewable.
+
+```{ojs}
+//| label: fig-capacity-railbelt
+//| fig-cap: "Railbelt Region Capacity."
+
+Plot.plot({
+  // Configure the x-axis
+  x: {
+    tickFormat: "d",
+    type: "band",
+    label: "Year"
+  },
+  // Configure the y-axis
+  y: {
+    grid: true,
+    label: "Capacity (MW)"
+  },
+  // Configure the plot
+  //title: "Railbelt region capacity",
+  caption: "Figure note: The category of Landfill Gas refers to the 11.5 MW power plant at the Anchorage Regional Landfill that is fueled by methane from decomposing waste. Although this plant uses reciprocating engines as its prime mover, we decided to show landfill gas as a separate category because it is a significant addition to the mix of renewable energy capacity.",
+  insetLeft: 0,
+  insetRight: 0,
+  width: width,
+
+  // Stacked area plot
+  marks: [
+    Plot.barY(cap_data.filter((d) => d.acep_region === "Railbelt" && d.capacity !== 0.0),
+      Plot.groupX(
+        {
+          y: "sum"
+        },
+        {
+          x: "year",
+          y: "capacity",
+          fill: "Prime Mover",
+          order: ["Fossil Turbines", "Recip Engines", "Hydro", "Wind","Utility Solar","Rooftop Solar","Storage","Landfill Gas"],
+          tip: {format: {x: "d"}}
+        }
+      )
+    ),
+    Plot.ruleY([0])
+  ],
+  // Configure the color scheme
+  color: {
+        domain: ["Fossil Turbines", "Recip Engines", "Hydro", "Wind","Utility Solar","Rooftop Solar","Storage","Landfill Gas"],
+        range: ["#606571", "#9da7bf", "#00a1b7", "#F79646", "#fad900","#9BBB59","#71346a","#896D09"],
+        legend: true
+    }
+})
+```
+
+Total renewable and storage capacity in the Railbelt region increased by `r capacity_delta(region = "Railbelt", numeric_out = TRUE) - capacity_delta(region = "Railbelt", prime_mover = "Fossil Turbines", numeric_out = TRUE) - capacity_delta(region = "Railbelt", prime_mover = "Recip Engines", numeric_out = TRUE)` MW. Notable additions included the commercial commissioning of the 18 MW Fire Island Wind site in September 2012 and the 25 MW Eva Creek Wind site in October 2012. Significant investments in storage capacity have also been made. Since 2011, `r capacity_delta("Railbelt", prime_mover = "Storage")` MW of storage, `r capacity_delta("Railbelt", prime_mover = "Wind")` MW of wind, `r capacity_delta("Railbelt", prime_mover = "Hydro")` MW of hydro, `r capacity_delta("Railbelt", prime_mover = "Utility Solar")` MW of utility solar, `r capacity_delta("Railbelt", prime_mover = "Rooftop Solar")` MW of rooftop – also known as “behind-the-meter”  – solar, and `r capacity_delta("Railbelt", prime_mover = "Landfill Gas")` MW of landfill gas have been added.
+
+```{ojs}
+//| label: fig-capacity-railbelt-renewable
+//| fig-cap: "Railbelt Region Renewable Capacity"
+
+Plot.plot({
+  // Configure the x-axis
+  x: {
+    tickFormat: "d",
+    type: "band",
+    label: "Year"
+  },
+  // Configure the y-axis
+  y: {
+    grid: true,
+    label: "Capacity (MW)"
+  },
+  // Configure the plot
+  //title: "Railbelt region renewable capacity",
+  insetLeft: 0,
+  insetRight: 0,
+  width: width,
+
+  // Stacked area plot
+  marks: [
+    Plot.barY(cap_data.filter((d) => d.acep_region === "Railbelt" && d.capacity !== 0.0 && d.prime_mover !== "Fossil Turbines" && d.prime_mover !== "Recip Engines"),
+      Plot.groupX(
+        {
+          y: "sum"
+        },
+        {
+          x: "year",
+          y: "capacity",
+          fill: "Prime Mover",
+          order: ["Hydro", "Wind","Utility Solar","Rooftop Solar","Storage","Landfill Gas"],
+          tip: {format: {x: "d"}}
+        }
+      )
+    ),
+    Plot.ruleY([0])
+  ],
+  // Configure the color scheme
+  color: {
+        domain: ["Hydro", "Wind","Utility Solar","Rooftop Solar","Storage","Landfill Gas"],
+        range: ["#00a1b7", "#F79646", "#fad900","#9BBB59","#71346a","#896D09"],
+        legend: true
+    }
+})
+```
+
+## Rural Remote
+The rural remote region saw an increase of `r capacity_delta("Rural Remote")` MW in capacity (a `r capacity_delta("Rural Remote", pct = TRUE)`% increase) (@fig-capacity-rural). Most of the increases in capacity were fossil fuel turbines (`r capacity_delta("Rural Remote", prime_mover = "Fossil Turbines")` MW added on the North Slope) and reciprocating engines (`r capacity_delta("Rural Remote", prime_mover = "Recip Engines")` MW). Renewable capacity is explored in further detail in the @fig-capacity-rural-renewable.
+
+```{ojs}
+//| label: fig-capacity-rural
+//| fig-cap: "Rural Remote Region Capacity"
+
+Plot.plot({
+  // Configure the x-axis
+  x: {
+    tickFormat: "d",
+    type: "band",
+    label: "Year"
+  },
+  // Configure the y-axis
+  y: {
+    grid: true,
+    label: "Capacity (MW)"
+  },
+  // Configure the plot
+  //title: "Rural Remote region capacity",
+  insetLeft: 0,
+  insetRight: 0,
+  width: width,
+
+  // Stacked area plot
+  marks: [
+    Plot.barY(cap_data.filter((d) => d.acep_region === "Rural Remote" && d.capacity !== 0.0),
+      Plot.groupX(
+        {
+          y: "sum"
+        },
+        {
+          x: "year",
+          y: "capacity",
+          fill: "Prime Mover",
+          order: ["Fossil Turbines", "Recip Engines", "Hydro", "Wind","Utility Solar","Storage"],
+          tip: {format: {x: "d"}}
+        }
+      )
+    ),
+    Plot.ruleY([0])
+  ],
+  // Configure the color scheme
+  color: {
+        domain: ["Fossil Turbines", "Recip Engines", "Hydro", "Wind","Utility Solar","Storage"],
+        range: ["#606571", "#9da7bf", "#00a1b7", "#F79646", "#fad900","#71346a"],
+        legend: true
+    }
+})
+```
+
+This region saw an absolute increase of `r capacity_delta(region = "Rural Remote", numeric_out = TRUE) - capacity_delta(region = "Rural Remote", prime_mover = "Fossil Turbines", numeric_out = TRUE) - capacity_delta(region = "Rural Remote", prime_mover = "Recip Engines", numeric_out = TRUE)` MW of renewable capacity between 2011 to 2021. Over this time period, hydropower generation resources increased by `r capacity_delta("Rural Remote", prime_mover = "Hydro")` MW, wind increased by `r capacity_delta("Rural Remote", prime_mover = "Wind")` MW, utility-scale solar increased by `r capacity_delta("Rural Remote", prime_mover = "Utility Solar")` MW and storage increased by `r capacity_delta("Rural Remote", prime_mover = "Storage")` MW. Between 2018 and 2021, 2 MW of wind was retired in the Bering Straits energy region, 1.2 MW in Kotzebue, and 0.2 MW in the Aleutians, explaining the reduction in wind capacity between the calendar years.
+
+```{ojs}
+//| label: fig-capacity-rural-renewable
+//| fig-cap: "Rural Remote Region Renewable Capacity"
+//| 
+Plot.plot({
+  // Configure the x-axis
+  x: {
+    tickFormat: "d",
+    type: "band",
+    label: "Year"
+  },
+  // Configure the y-axis
+  y: {
+    grid: true,
+    label: "Capacity (MW)"
+  },
+  // Configure the plot
+  //title: "Rural Remote region renewable capacity",
+  insetLeft: 0,
+  insetRight: 0,
+  width: width,
+
+  // Stacked area plot
+  marks: [
+    Plot.barY(cap_data.filter((d) => d.acep_region === "Rural Remote" && d.capacity !== 0.0 && d.prime_mover !== "Fossil Turbines" && d.prime_mover !== "Recip Engines"),
+      Plot.groupX(
+        {
+          y: "sum"
+        },
+        {
+          x: "year",
+          y: "capacity",
+          fill: "Prime Mover",
+          order: ["Hydro", "Wind","Utility Solar","Storage"],
+          tip: {format: {x: "d"}}
+        }
+      )
+    ),
+    Plot.ruleY([0])
+  ],
+  // Configure the color scheme
+  color: {
+        domain: ["Hydro", "Wind","Utility Solar","Storage"],
+        range: ["#00a1b7", "#F79646", "#fad900","#71346a"],
+        legend: true
+    }
+})
+```
+
+
+```{ojs}
+original_cap_data = FileAttachment("data/working/capacity/capacity_long.csv").csv({ typed: true })
+cap_data = original_cap_data.map((d) => ({...d, "Prime Mover": d.prime_mover}))
+```
