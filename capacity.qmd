@@ -118,11 +118,16 @@ agg_cap <- capacity_data %>%
 ggplot(agg_cap, aes(x = year, y = sum_capacity, fill = prime_mover)) +
   geom_area(position = "stack") + 
   scale_x_continuous(
+    name = "Year", 
     breaks = seq(min(agg_cap$year), max(agg_cap$year), by = 1), 
     limits = c(min(agg_cap$year), max(agg_cap$year)), 
-    expand = c(0, 0), 
-    name = "Year") + 
-  scale_y_continuous(name = "Capacity (MW)", labels = comma) + 
+    expand = c(0, 0.1) 
+    ) + 
+  scale_y_continuous(
+    name = "Capacity (MW)", 
+    labels = comma,
+    breaks = seq(0, 3000, by = 500),
+    limits = c(0, 3500)) + 
   scale_fill_manual(
     values = c(
       "Fossil Turbines" = "#606571",
@@ -141,6 +146,7 @@ ggplot(agg_cap, aes(x = year, y = sum_capacity, fill = prime_mover)) +
     legend.title=element_blank(),
     panel.grid.major.x = element_blank(), 
     panel.grid.minor.x = element_blank(), 
+    panel.grid.minor.y = element_blank(),
     legend.text = element_text(size = 8)
     ) + 
   labs(title = "Capacity Changes, Statewide", y = "Capacity (MW)")
