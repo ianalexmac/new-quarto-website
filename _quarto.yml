@@ -36,6 +36,8 @@ book:
     - acronyms.qmd
     - methods.qmd
     - prices.qmd
+    - capacity.qmd
+    
   appendices:
     - about.qmd
     - setup.qmd
