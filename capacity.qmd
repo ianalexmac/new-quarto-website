@@ -16,6 +16,7 @@ library(tidyr)
 library(dplyr)
 library(readr)
 library(ggplot2)
+library(ggiraph)
 library(scales)
 
 # Import the data
@@ -111,9 +112,48 @@ agg_cap <- capacity_data %>%
         )))
 
 ```
+```{r, fig.width=8, eval=knitr::is_html_output()}
+
+ggplot(agg_cap, aes(x = year, y = sum_capacity, fill = prime_mover)) +
+  geom_area(position = "stack") + 
+  scale_x_continuous(
+    name = "Year", 
+    breaks = seq(min(agg_cap$year), max(agg_cap$year), by = 1), 
+    limits = c(min(agg_cap$year), max(agg_cap$year)), 
+    expand = c(0, 0.1) 
+    ) + 
+  scale_y_continuous(
+    name = "Capacity (MW)", 
+    labels = comma,
+    breaks = seq(0, 3000, by = 500),
+    limits = c(0, 3500)) + 
+  scale_fill_manual(
+    values = c(
+      "Fossil Turbines" = "#606571",
+      "Recip Engines" = "#9da7bf",
+      "Hydro" = "#00a1b7",
+      "Wind" = "#F79646",
+      "Utility Solar" = "#fad900",
+      "Rooftop Solar" = "#9BBB59",
+      "Storage" = "#71346a",
+      "Landfill Gas" = "#896D09"), 
+    name = "Prime Mover") + 
+  guides(fill = guide_legend(nrow = 1, reverse = T)) + 
+  theme_minimal() + 
+  theme(
+    legend.position="top", 
+    legend.title=element_blank(),
+    panel.grid.major.x = element_blank(), 
+    panel.grid.minor.x = element_blank(), 
+    panel.grid.minor.y = element_blank(),
+    legend.text = element_text(size = 8)
+    ) + 
+  labs(title = "Capacity Changes, Statewide", y = "Capacity (MW)")
 
 
-```{r, fig.width=8}
+```
+
+```{r, fig.width=8, eval=knitr::is_latex_output()}
 
 ggplot(agg_cap, aes(x = year, y = sum_capacity, fill = prime_mover)) +
   geom_area(position = "stack") + 
